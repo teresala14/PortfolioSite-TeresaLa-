@@ -1,0 +1,107 @@
+/*
+Colors Used:
+Header/Footer Color: Blue #4A557B
+Button Color Color: Purple #2F2183
+Header 1,2 Color: Blue #4A557B
+Header 3,4 Color: Blue #5E7AAE
+*/
+body {
+    color: black;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px; /*sets the font size to 16*/
+    font-weight: 400; /*sets the font weight to 400*/
+    line-height: 1.8em ; /*sets the line height to 1.8*/
+
+}
+h1, h2, h3, h4 {
+    line-height: 1.4em;
+}
+h1 {
+    font-size: 2.5em;
+    color: #2F2183;
+    font-weight: 600;
+    letter-spacing: 10px;
+  
+}
+h2 {
+    font-size: 2em;
+    color: #4A557B;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+h3 {
+    font-size: 1.75em;
+    color: #5E7AAE;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+h4 {
+    font-size: 1.25em; 
+    color: #5E7AAE;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+img {
+    width: 100%;
+}
+h1, h2, h3, h4 {
+    width: 100%;
+}
+a {
+    color: #2F2183;
+    text-decoration: none; /* No underlining */
+  }
+  a:hover {
+    color: #2F2183;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+  a:visited { /* visited link */
+    color: #aba6cd;
+  }
+  a:active { /* selected link */
+    color: #2F2185;
+  }
+
+a:focus {
+  color: #2F2183;
+  text-decoration: underline;
+}
+.button:visited {
+    color: white
+}
+
+.button {
+    display: inline-block;
+    background-color:#2F2183;
+    color: white;
+    font-weight:400;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.button:active {
+    background-color: #140C48;
+}
+.button.contact {
+    background-color:transparent;
+    color: #2F2183;
+    border: 2px solid #2F2183;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button.contact:hover {
+    background-color: #2F2183;
+    color: #FFFF;
+    opacity: 0;
+}

@@ -1,18 +1,24 @@
 <!Doctype html>
+
     <html lang="en" dir="ltr">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset= "utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap" rel="stylesheet">
     <title> Teresa La </title>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <!--Header Section-->
-    <header>
-    <div>
+    <div id="my-header">
         <picture>
-        <source media="(min-width:650px)" srcset="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/logo.png">
-        <source media="(min-width:465px)" srcset="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/logo.png">
-        <img src="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/logo.png" width="400" 
-        height="500" alt="Teresa La" style="width:auto;">
+        <source media="(min-width:650px)" srcset="img/logo.png">
+        <source media="(min-width:465px)" srcset="img/logo.png">
+        <img src="img/logo.png" width="200" 
+        height="100" alt="Teresa La" style="width:auto;">
         </picture>
 <nav>
     <ul>
@@ -21,37 +27,39 @@
     <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-</div>
-    </header>
-<!--Hero Section-->
-<main><div>
-     <div> 
+<div> 
+    <div>
+        <picture>
+            <source media="(min-width:650px)" srcset="img/profilephoto.png">
+            <source media="(min-width:465px)" srcset="img/profilephoto.png">
+            <img src="img/profilephoto.png" width="300" 
+            height="300" alt="Teresa La" style="width:auto;">
+            </picture>
+    </div>
 <h1> Hello, I'm Teresa </h1>
 <span>UX/UI designer based in NYC</span>
 <p>I'm a creative problem solver passionate about creating accessible digital products, intuitive experiences.</p>
 </div>
 </div>
-<div>
-    <picture>
-        <source srcset="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/InsideOut/Ellipse%201.png" media="(max-width:767px)">
-        <img src="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/InsideOut/Ellipse%201.png" alt="My Image">
-      </picture>
 </div>
+    </header>
+<!--Hero Section-->
+<main id="my-work"><div>
 <h2>My Work</h2><!--Project One Section-->
 <div><!--both columns for project-->
 <div><!--(used for image)-->
     <picture>
-        <source media="(min-width:650px)" srcset="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/Inside%20Out/Inside%20out%20Logo.png">
-        <source media="(min-width:465px)" srcset="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/Inside%20Out/Inside%20out%20Logo.png">
-        <img src="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/Inside%20Out/Inside%20out%20Logo.png" width="400" 
-        height="500" alt="Inside Out" style="width:auto;">
+        <source media="(min-width:650px)" srcset="img/insideout/insideoutlogo.png">
+        <source media="(min-width:465px)" srcset="img/insideoutlogo/Inside%20out%20Logo.png">
+        <img src="img/insideout/insideoutlogo.png" width="300" 
+        height="400" alt="Inside Out" style="width:auto;">
     </picture>
         </div> <!--end first column-->
         <div> <!--second column (for text)-->
             <h3>Inside Out</h3> <!--project 1 title-->
             <p>Inside Out was created to make it easier for users to track their nutrition and exercise while giving them all the resources they need to live a healthier lifestyle.
             </p>
-            <a href="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/InsideOut.html">View Project</a> <!--button link-->
+            <a href="insideout.html" class="button">View Project</a> <!--button link-->
             </div> <!--end second column-->
             </div><!--end entire row-->
 
@@ -65,9 +73,9 @@
     <div><!-- (used for image) -->
         <picture>
             
-            <source media="(min-width:650px)" srcset="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/Some%20Dumpling/somdumpling.png">
-            <source media="(min-width:465px)" srcset="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/Some%20Dumpling/somdumpling.png">
-            <img src="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/Some%20Dumpling/somdumpling.png" width="400" 
+            <source media="(min-width:650px)" srcset="img/somedumpling/somdumpling.png">
+            <source media="(min-width:465px)" srcset="img/somedumpling/somdumpling.png">
+            <img src="img/somedumpling/somdumpling.png" width="400" 
             height="500" alt="Some Dumpling" style="width:auto;">
         </picture>
     </div><!-- end first column -->
@@ -78,32 +86,49 @@
 
       </p><!-- end paragraph -->
 
-      <a href="">Read more</a><!-- button or link label -->
+      <a href="#" class="button">View Project</a>
     </div><!-- end second column -->
   </div><!-- end entire row -->
 </main>
-</body>
 <!--Footer-->
-<footer>
+</body>
+<footer id="my=footer">
+
     <div>
         <h2>Get in Touch</h2>
     <p>For any questions or inquiries you can send me an email or connect with me through Linkedin!</p>
 <div>
-     <a href="mailto:teresala.45@gmail.com"> Email Me</a>
+    <a href="mailto:teresala.45@gmail.com" class="button contact">Email Me</a>
 </div>
 <div>
     <!--Social Media Links-->
     <a href="https://www.linkedin.com/in/teresa-la/" target="_blank">
-        <img src="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/linkedinicon.png">
+        <picture>
+            <source media="(min-width:650px)" srcset="img/linkedinicon.png">
+            <source media="(min-width:465px)" srcset="img/linkedinicon.png">
+            <img src="img/linkedinicon.png" width="100" 
+            height="50" alt="Teresa La" style="width:auto;">
+            </picture>
     </a>
     <a href="https://www.instagram.com/teresa_la_/?hl=en" target="_blank">
-        <img src="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/Instagramicon.png">
+        <picture>
+            <source media="(min-width:650px)" srcset="img/Instagramicon.png">
+            <source media="(min-width:465px)" srcset="img/Instagramicon.png">
+            <img src="img/Instagramicon.png" width="100" 
+            height="50" alt="Teresa La" style="width:auto;">
+            </picture>
     </a>
     <a href="https://dribbble.com/teresala14" target="_blank">
-        <img src="file:///Users/teresala/Desktop/PortfolioSite(TeresaLa)/Img/dribbleicon.png">
+        <picture>
+            <source media="(min-width:650px)" srcset="img/dribbleicon.png">
+            <source media="(min-width:465px)" srcset="img/dribbleicon.png">
+            <img src="img/dribbleicon.png" width="100" 
+            height="50" alt="Teresa La" style="width:auto;">
+            </picture>
     </a>
 </div>
 <p>Copyright Teresa-La 2022</p>
     </div>
 </footer>
+</body>
 </html>
