@@ -131,25 +131,37 @@ a:focus {
 .logo {
     max-width: 250px;
 }
-nav > ul> li>{
+nav > ul{
     list-style-type: none;
     padding: 0;
-    
+}
+nav > ul> li{
+    display: inline-block;
+}
+
+#hero h1{
+    text-align:center
+
 }
 nav > ul> li> a {
-    display: inline-block;
     color: white;
 padding: 0 15px;
 font-weight:600
 }
 
 .center{
-    text-align: center;
+   text-align: center
 }
 #hero {
     display:inline-block;
 }
 
+#profile-photo {
+    display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
 #work {
     display:inline-block;
 }
@@ -167,7 +179,7 @@ font-weight:600
     display: inline-block;
 }
 
-#work, #contact, #about,#logo {
+#work, #contact, #about{
     color:white;
 }
 #footer-title {
