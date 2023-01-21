@@ -13,7 +13,8 @@
 </head>
 <body>
     <!--Header Section-->
-    <div id="my-header">
+    <header id="my-header">
+        <div class="container">
         <picture>
         <source media="(min-width:650px)" srcset="img/logo.png">
         <source media="(min-width:465px)" srcset="img/logo.png">
@@ -21,34 +22,38 @@
         height="100" alt="Teresa La" style="width:auto;">
         </picture>
 <nav>
-    <ul>
-   <li><a href="index.html">Work</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <div>
+    <ul class="navigation">
+   <li><a href="index.html"id="work">Work</a></li>
+    <li><a href="about.html"id="about">About</a></li>
+    <li><a href="#contact" id="contact">Contact</a></li>
     </ul>
 </nav>
-<div> 
-    <div>
-        <picture>
+</div>
+</header>
+<!--Hero Section-->
+<div id="hero"> 
+    <div class="container">
+        <picture id="profile-photo">
             <source media="(min-width:650px)" srcset="img/profilephoto.png">
             <source media="(min-width:465px)" srcset="img/profilephoto.png">
             <img src="img/profilephoto.png" width="300" 
             height="300" alt="Teresa La" style="width:auto;">
             </picture>
-    </div>
 <h1> Hello, I'm Teresa </h1>
 <span>UX/UI designer based in NYC</span>
 <p>I'm a creative problem solver passionate about creating accessible digital products, intuitive experiences.</p>
 </div>
 </div>
-</div>
-    </header>
-<!--Hero Section-->
-<main id="my-work"><div>
+<!--Work Section-->
+<main>
+
+<div id="my-work">
+    <div class="container">
 <h2>My Work</h2><!--Project One Section-->
 <div><!--both columns for project-->
 <div><!--(used for image)-->
-    <picture>
+    <picture class="logo-image">
         <source media="(min-width:650px)" srcset="img/insideout/insideoutlogo.png">
         <source media="(min-width:465px)" srcset="img/insideoutlogo/Inside%20out%20Logo.png">
         <img src="img/insideout/insideoutlogo.png" width="300" 
@@ -61,41 +66,34 @@
             </p>
             <a href="insideout.html" class="button">View Project</a> <!--button link-->
             </div> <!--end second column-->
-            </div><!--end entire row-->
-
-
-
-
-  
-    
-<!--Project Two Section-->
+          
+            <!--Project Two Section-->
 <div><!-- both columns for project-->
     <div><!-- (used for image) -->
-        <picture>
-            
+        <picture class="logo-image">
+        
             <source media="(min-width:650px)" srcset="img/somedumpling/somdumpling.png">
             <source media="(min-width:465px)" srcset="img/somedumpling/somdumpling.png">
             <img src="img/somedumpling/somdumpling.png" width="400" 
             height="500" alt="Some Dumpling" style="width:auto;">
         </picture>
-    </div><!-- end first column -->
-    <div><!-- second column (used for text) -->
-      <h3>Some Dumpling</h3><!-- project 2 title-->
+    <h3>Some Dumpling</h3><!-- project 2 title-->
       <p><!-- open paragraph -->
-        Some Dumplings is an innovative small business based in Singapore bringing fresh-frozen dumplings and private events to customers throughout the island.
-
-      </p><!-- end paragraph -->
-
+      </div><!-- end first column -->
+        Some Dumplings is an innovative small business based in Singapore bringing fresh-frozen dumplings and private events to customers throughout the island.</p>
       <a href="#" class="button">View Project</a>
     </div><!-- end second column -->
   </div><!-- end entire row -->
+  </div>
 </main>
+        
+
 <!--Footer-->
 </body>
-<footer id="my=footer">
+<footer id="my-footer">
 
-    <div>
-        <h2>Get in Touch</h2>
+    <div class="container">
+        <h2 id="footer-title">Get in Touch</h2>
     <p>For any questions or inquiries you can send me an email or connect with me through Linkedin!</p>
 <div>
     <a href="mailto:teresala.45@gmail.com" class="button contact">Email Me</a>
