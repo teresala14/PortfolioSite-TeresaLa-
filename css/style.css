@@ -46,7 +46,7 @@ h4 {
     font-weight: 600;
     letter-spacing: 5px;
 }
-img {
+.bannerimage {
     width: auto;
     height: auto;
     max-width: 100%;
@@ -139,19 +139,15 @@ a:focus {
     color: white;  
     border: 15px solid #4A557B;
 }
-.social-icon {
-    height:auto;
-    max-width: 100%;
+#social-icon {
+    height:50px;
+    width: 50px;
 }
 #my-work {
     display: inline-block;
 }
-.logo-image {
-    display:block;
-    width: 60%;
-}
 
-#work, #contact,#about {
+#work, #contact, #about,#logo {
     color:white;
 }
 #footer-title {
