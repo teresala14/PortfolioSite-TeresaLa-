@@ -134,12 +134,15 @@ a:focus {
 }
     
 #my-footer {
-    display: block;
+    display: inline-block;
     background-color: #4A557B;
     color: white;  
     border: 15px solid #4A557B;
 }
-
+.social-icon {
+    height:auto;
+    max-width: 100%;
+}
 #my-work {
     display: inline-block;
 }
