@@ -114,6 +114,11 @@ a:focus {
     color: #2F2183;
     opacity: 0;
 }
+.button.contact:active {
+    background-color:rgb(211, 193, 238);
+    color: #2F2183;
+    opacity: 0;
+}
 .container {
     padding: 0 15px;
   }
@@ -127,9 +132,14 @@ a:focus {
     border: 5px solid #4A557B;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 20px 20px;
+    position:fixed
 }
 .logo {
     max-width: 250px;
+}
+nav{
+    display: inline-block;
+    width: 100%;
 }
 nav > ul{
     list-style-type: none;
@@ -148,12 +158,20 @@ nav > ul> li> a {
 padding: 0 15px;
 font-weight:600
 }
+nav > ul> li> a:hover{
+    text-decoration-line: underline;
+}
+nav > ul> li> a:visited{
+    color: white;
+}
 
 .center{
    text-align: center
 }
 #hero {
     display:inline-block;
+    background-color: whitesmoke;
+    width:100%
 }
 
 #profile-photo {
@@ -176,6 +194,7 @@ width: 50%;
 }
 
 #my-work {
+    background-color: whitesmoke;
     display: inline-block;
 }
 
