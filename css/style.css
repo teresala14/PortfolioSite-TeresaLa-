@@ -22,26 +22,30 @@ h1, h2, h3, h4 {
     line-height: 1.4em;
 }
 h1 {
-    display: inline-block;
-    font-size: 1.75em;
+    margin: 15% auto;
+    display: block;
+    font-size: 2.25em;
     color: #2F2183;
     font-weight: 600;
     letter-spacing: 10px;
   
 }
 h2 {
-    font-size: 1.5em;
+    margin: 10% auto;
+    font-size: 1.85em;
     color: #4A557B;
     font-weight: 600;
     letter-spacing: 5px;
 }
 h3 {
-    font-size: 1.45em;
+    margin: 10% auto;
+    font-size: 1.35em;
     color: #5E7AAE;
     font-weight: 600;
     letter-spacing: 5px;
 }
 h4 {
+    margin: 10% auto;
     font-size: 1.25em; 
     color: #5E7AAE;
     font-weight: 600;
@@ -121,6 +125,7 @@ a:focus {
 }
 .container {
     padding: 0 15px;
+    width:100%;
   }
 #my-header {
     display: inline-block;
@@ -164,6 +169,12 @@ nav > ul> li> a:hover{
 nav > ul> li> a:visited{
     color: white;
 }
+.center-image {
+    display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
 
 .center{
    text-align: center
@@ -174,12 +185,6 @@ nav > ul> li> a:visited{
     width:100%
 }
 
-#profile-photo {
-    display: block;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
-}
 #work {
     display:inline-block;
 }
@@ -205,4 +210,10 @@ width: 50%;
 }
 .row {
     margin: 25px 0;
+}
+
+#about-title {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
 }
