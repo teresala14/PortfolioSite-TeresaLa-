@@ -123,16 +123,16 @@ a:focus {
     padding: 0 15px;
   }
 #my-header {
-    display: block;
+    display: inline-block;
     background-color: #4A557B;
+    width:100%;
     color: white;
     text-align: center;
     padding: 5px;
-    margin: 5px; 
     border: 5px solid #4A557B;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 20px 20px;
-    position:fixed
+    position:relative
 }
 .logo {
     max-width: 250px;
@@ -183,7 +183,9 @@ width: 50%;
 #work {
     display:inline-block;
 }
-
+.row {
+color: whitesmoke;
+}
 
 
 #my-footer {
