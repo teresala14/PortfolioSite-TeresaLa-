@@ -1,36 +1,34 @@
 <!Doctype html>
+
     <html lang="en" dir="ltr">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <meta charset= "utf-8">
-    <title> Teresa La UX </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap" rel="stylesheet">
+    <title> Teresa La </title>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+<body class="container">
     <!--Header Section-->
-    <header id="my-header">
-        <div class="container">
-            <picture class="logo">
+    <header id="my-header" class="container">
+            <picture>
                 <source media="(min-width:650px)" srcset="img/logo.png">
                 <source media="(min-width:465px)" srcset="img/logo.png">
-                <img src="img/logo.png" width="250" 
+                <img src="img/logo.png" class="logo" width="250" 
                 height="75" alt="Teresa La" style="width:auto;">
                 </picture>
-        <div>
 <nav>
     <ul class="navigation">
    <li><a href="index.html">Work</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="#my-footer" >Contact</a></li>
+    <li><a href= "#my-footer" >Contact</a></li>
     </ul>
 </nav>
-</div>
-</div>
 </header>
+
 <main>
     <div><!--Begin About Section-->
         <div class="container">
@@ -40,88 +38,93 @@
             <picture>
                 <source media="(min-width:650px)" srcset="img/aboutphoto.png">
                 <source media="(min-width:465px)" srcset="img/aboutphoto.png">
-                <img src="img/aboutphoto.png" class= "center-image" width= "200" 
-                height="200" alt="My Photo" style="width:auto;">
+                <img src="img/aboutphoto.png" id= "about-image" class= "center-image" width= "200" 
+                height="300" alt="My Photo" style="width:auto;">
             </picture>
         </div>
             <div class="container">
-                <div>
+                <div class= "col-lg-8">
                     <h2 id=my-story class="center">My Story</h2>
                     <p>My name is Teresa La and I am a UX/UI designer based in the NYC area. I graduated from Rutgers University with a degree in marketing because I found that the psychology of the mind of the consumer fascinating. I leveraged that knowledge in the restaurant business as a manager while utilizing social media and marketing tactics to increase turnover during Covid-19 when small businesses were struggling to adapt. At the same time I freelanced as a marketing analyst, identifying possible business opportunities.</p>
                     <div class="row"></div>
                     <p>During that time, I discovered UX design and wanted to pursue the field and began my training with Career Foundry. I learned techniques for design, research, information architecture, and how to create overall intuitive experiences.
                         
                         In my free time, I developed a love for cooking after a long history in the food industry and I’m constantly trying out new recipes. When I’m not working you can find me with a new book, in the kitchen, or outside walking my German Shepherd.</p>
-
-                        <a href="files/CV.pdf" class="button" download>Download My Resume</a>
+<div class="center">
+                        <a href="files/CV.pdf" class="button" download >Download My Resume </a>
+                    </div>
                         </div>
-                        <div>
-                            <h2>Skills and Tools</h2>
-                        </div>
-                        <div>
-                            <h3>Relevant skills</h3>
-                            <ul>
-                                <li>Research (qualitative and quantitative) </li>
+                        <div id="skills" class= "column col-lg-4">
+                            <div>
+                                <h3 class="center">Skills & Tools</h3>
+                            </div>
+                            <div>
+                            <h4>Relevant skills</h4>
+                            <ul id="skilllist">
+                                <li>Research </li>
                                 <li>Usability Testing </li>
                                 <li>User Flows </li>
                                 <li>Prototyping</li>
                                 <li>Wireframing</li>
                                 <li>HTML</li>
+                                <li>CSS</li>
                             </ul>
                         </div>
-                        <div>
-                            <h3>Tools I Use</h3>
-                            <ul>
-                                <li>Figma </li>
-                                <li>Miro </li>
-                                <li>Balsamiq </li>
-                                <li>UsabilityHub</li>
-                            </ul>
-                </div>
+                            <div>
+                                <h4> Tools I Use</h4>
+                                <ul id="toollist">
+                                    <li>Figma </li>
+                                    <li>Miro </li>
+                                    <li>Balsamiq </li>
+                                    <li>UsabilityHub</li>
+                                    <li>Github</li>
+                                    <li>Visual Studio</li>
+                                </ul>
+                    </div>
+                        </div>
+                        
             </div>
         </div>
     </div>
     </div>
-
 </main>
 <!--Footer-->
-<footer id="my-footer">
+<footer id="my-footer" class="container">
 
-    <div class="container">
-        <h2 class=center id="footer-title">Get in Touch</h2>
-    <p>For any questions or inquiries you can send me an email or connect with me through Linkedin!</p>
-<div>
-    <a href="mailto:teresala.45@gmail.com" class="button contact">Email Me</a>
+    <h2 class=center id="footer-title">Get in Touch</h2>
+<p class="center">For any questions or inquiries you can send me an email or connect with me through Linkedin!</p>
+<div class="center">
+<a href="mailto:teresala.45@gmail.com" class="button contact">Email Me</a>
 </div>
-<div>
-    <!--Social Media Links-->
-    <a href="https://www.linkedin.com/in/teresa-la/" target="_blank">
-        <picture>
-            <source media="(min-width:650px)" srcset="img/linkedinicon.png">
-            <source media="(min-width:465px)" srcset="img/linkedinicon.png">
-            <img src="img/linkedinicon.png" width="25" 
-            height="25" alt="linkedin" style="width:auto;">
-            </picture>
-    </a>
-    <a href="https://www.instagram.com/teresa_la_/?hl=en" target="_blank">
-        <picture>
-            <source media="(min-width:650px)" srcset="img/instagramicon.png">
-            <source media="(min-width:465px)" srcset="img/instagramicon.png">
-            <img src="img/Instagramicon.png" width="25" 
-            height="25" alt="instagram" style="width:auto;">
-            </picture>
-    </a>
-    <a href="https://dribbble.com/teresala14" target="_blank">
-        <picture>
-            <source media="(min-width:650px)" srcset="img/dribbleicon.png">
-            <source media="(min-width:465px)" srcset="img/dribbleicon.png">
-            <img src="img/dribbleicon.png" width="25" 
-            height="25" alt="dribble" style="width:auto;">
-            </picture>
-    </a>
+<!--Social Media Links-->
+<div class="center">
+<a href="https://www.linkedin.com/in/teresa-la/" target="_blank">
+    <picture>
+        <source media="(min-width:650px)" srcset="img/linkedinicon.png">
+        <source media="(min-width:465px)" srcset="img/linkedinicon.png">
+        <img src="img/linkedinicon.png" class= "social-link" width="25" 
+        height="25" alt="linkedin" style="width:auto;">
+        </picture>
+</a>
+<a href="https://www.instagram.com/teresa_la_/?hl=en" target="_blank">
+    <picture>
+        <source media="(min-width:650px)" srcset="img/instagramicon.png">
+        <source media="(min-width:465px)" srcset="img/instagramicon.png">
+        <img src="img/Instagramicon.png" class= "social-link" width="25" 
+        height="25" alt="instagram" style="width:auto;">
+        </picture>
+</a>
+<a href="https://dribbble.com/teresala14" target="_blank">
+    <picture>
+        <source media="(min-width:650px)" srcset="img/dribbleicon.png">
+        <source media="(min-width:465px)" srcset="img/dribbleicon.png">
+        <img src="img/dribbleicon.png"  class= "social-link" width="25" 
+        height="25" alt="dribble" style="width:auto;">
+        </picture>
+</a>
 </div>
-<p>Copyright Teresa-La 2022</p>
-    </div>
+<p class="right">Copyright Teresa-La 2022</p>
 </footer>
 </body>
 </html>
+

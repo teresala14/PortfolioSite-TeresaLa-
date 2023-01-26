@@ -11,9 +11,9 @@ Header 3,4 Color: Blue #5E7AAE
   
 body {
     color: black;
-    background-color: white;
+    background-color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px; /*sets the font size to 16*/
+    font-size: 14px; /*sets the font size to 14*/
     font-weight: 400; /*sets the font weight to 400*/
     line-height: 1.8em ; /*sets the line height to 1.8*/
 
@@ -22,24 +22,29 @@ h1, h2, h3, h4 {
     line-height: 1.4em;
 }
 h1 {
-    margin: 15% auto;
+    margin: 10% auto;
     display: block;
-    font-size: 2.25em;
+    font-size: 1.8em;
     color: #2F2183;
     font-weight: 600;
     letter-spacing: 10px;
   
 }
-h2 {
-    margin: 10% auto;
-    font-size: 1.85em;
+h1 > span {
+    display: block;
+    font-size: 0.6em;
     color: #4A557B;
+}
+h2 {
+    margin: 5% auto;
+    font-size: 1.75em;
+    color: #0e32b2;
     font-weight: 600;
     letter-spacing: 5px;
 }
 h3 {
-    margin: 10% auto;
-    font-size: 1.35em;
+    margin: 5% auto;
+    font-size: 1.4em;
     color: #254278;
     font-weight: 600;
     letter-spacing: 5px;
@@ -51,10 +56,17 @@ h4 {
     font-weight: 600;
     letter-spacing: 5px;
 }
-.bannerimage {
-    width: auto;
-    height: auto;
-    max-width: 100%;
+img {
+    display: inline-block;
+    width:auto;
+    height:auto;
+    max-width: 80%;
+    
+}
+svg{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1, h2, h3, h4 {
     width: auto;
@@ -94,9 +106,10 @@ a:focus {
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.2s opacity;
 }
 .button:hover {
-    opacity: 0.8;
+    opacity: 0.7;
     text-decoration: none;
 }
 .button:active {
@@ -116,7 +129,6 @@ a:focus {
 .button.contact:hover {
     background-color:white;
     color: #2F2183;
-    opacity: 0;
 }
 .button.contact:active {
     background-color:rgb(211, 193, 238);
@@ -124,23 +136,29 @@ a:focus {
     opacity: 0;
 }
 .container {
-    padding: 0 15px;
-    width:100%;
+    display: inline-block;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
   }
 #my-header {
-    display: inline-block;
+    display: block;
     background-color: #4A557B;
-    width:100%;
+    width:auto;
     color: white;
     text-align: center;
     padding: 5px;
     border: 5px solid #4A557B;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 20px 20px;
-    position:relative
+    position: relative;
 }
 .logo {
     max-width: 250px;
+}
+#banner-image{
+    max-width: 100%;
+    margin-left:10%;
+    margin-right: 10%;
 }
 nav{
     display: inline-block;
@@ -154,10 +172,34 @@ nav > ul> li{
     display: inline-block;
 }
 
+/*////////HERO CSS///////*/ 
+
+#hero {
+    display:block;
+    background-color: whitesmoke;
+    max-width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #hero h1{
     text-align:center
 
 }
+#hero-image {
+   display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 100%;
+}
+ #hero-svg {
+    height:auto;
+    width: auto;
+    max-width: 100%;
+ }
+
+/*////////NAVIGATION CSS///////*/ 
+
 nav > ul> li> a {
     color: white;
 padding: 0 15px;
@@ -179,19 +221,15 @@ width: 50%;
 .center{
    text-align: center
 }
-#hero {
-    display:inline-block;
-    background-color: whitesmoke;
-    width:100%
-}
 
 #work {
     display:inline-block;
+    max-width:80%;
 }
 
 
 #my-footer {
-    display: inline-block;
+    display: block;
     background-color: #4A557B;
     color: white;  
     border: 15px solid #4A557B;
@@ -210,10 +248,235 @@ width: 50%;
 }
 .row {
     margin: 25px 0;
+    background-color: whitesmoke;
+    
 }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
 
 #about-title {
     width: 100%;
     text-align: center;
     padding: 20px;
+}
+.socials{
+    display: inline-block;
+    justify-content: center;
+    height:auto;
+    width: auto;
+}
+.social-link {
+    margin:10px;
+    max-width: 25px;
+
+}
+#about-image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;}
+
+.right{
+    text-align: right;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    #my-header {
+        text-align: unset;
+        padding: 10px 0 0 13px;
+    }
+    nav {
+        width:auto;
+        float: right;
+        margin-top: 20px;
+        padding-right:15px;
+    }
+    .logo {
+        margin-top: 10px;
+    }
+    #about-page h3{
+        margin-top: 0;
+      }
+      body {
+        display: inline-block;
+        font-size: 14px;
+    
+    }
+    h1, h2, h3, h4 {
+        margin: 5% auto;
+    }
+    #hero {
+        text-align:center;
+    }
+    #hero-image{
+        height: 233px;
+        width: 233px;
+    
+    }
+    #hero span {
+        font-size:small;
+        display: block;
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 10px;
+        margin-right: 0;
+    }
+    #banner-image{
+        margin-top:50px;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-3 {
+        margin-top: 5%;
+        width: 32%;
+        margin-bottom: 5%;
+
+    }
+    
+#resume{
+    display: flex;
+    width: 200px;
+    justify-content: center;
+}
+#smallest{
+    font-size:10px;
+}
+    [class*="col-"] {
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+}
+    
+
+
+
+  
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+    body{
+        font-size: medium;
+    }
+    .col-lg-7 {
+        width: 60%;
+        padding-right: 5%;
+    }
+    .col-lg-5 {
+        width: 40%;
+        margin-top: 5%;
+        padding-left: 5%
+    }
+    .col-lg-8 {
+        width: 60%;
+        margin-right: 10%;
+    }
+    .col-lg-4 {
+        width: 28%;
+        margin-top:8%;
+        padding-top: 10px;
+        padding-left: 30px;
+        border-radius: 8px;
+        padding-bottom: 10px;
+    }
+    #toollist {
+        width: 300px;
+        margin: auto;
+        padding-left:10%;
+    }
+    #skilllist {
+    width: 300px;
+        margin: auto;
+        padding-left:10%;}
+
+    .container {
+        margin-left: 2%;
+        margin-right: 2%;
+        max-width: 1200px;
+    }
+    #hero span {
+        font-size:medium;
+        display: block;
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 10px;
+        margin-right: 0;}
+
+        #skills {
+            color: rgb(75, 75, 125);
+            background-color:#ffffff;
+            box-shadow: 0px 4px 20px #5E7AAE;
+        }
+        #designsystem{
+            margin-right:50%;
+            margin-top: 40%;
+        }
+        
+        
+        
+        
+}
+
+
+  /*SVG ANIMATIONS*/
+
+  @keyframes small-color-change {
+    0% {fill: #0E2971}
+    50% {fill: rgb(213, 212, 225);}
+    100% {fill: rgb(31, 5, 84);}
+  }
+
+  .uiux {
+    animation: 5s small-color-change infinite linear;
+  }
+  @keyframes big-color-change {
+    0% {fill: rgb(163, 56, 202)}
+    50% {fill:#2a52b0}
+    100% {fill: rgb(31, 5, 84);}
+  }
+  .svg-text {
+    animation: 6s make-bigger linear;
+    transform-origin: 50% 50%;
+transform-box:fill-box;
+}
+ 
+
+  @keyframes rotate-left {
+    from {transform: rotate(0)}
+    to {transform: rotate(359.9deg)}
+}
+.wheel-left {
+    animation: 10s rotate-left infinite;
+transform-origin: 50% 50%;
+transform-box:fill-box;
+}
+@keyframes rotate-right {
+    from {transform: rotate(0)}
+    to {transform: rotate(-359.9deg)}
+}
+.wheel-right {
+    animation: 10s rotate-right infinite;
+transform-origin: 50% 50%;
+transform-box:fill-box;
+}
+@keyframes make-bigger {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.1)}
+    100% {transform: scale(1)}
+}
+.circle {
+    animation: 6s make-smaller linear;
+    transform-origin: 50% 50%;
+transform-box:fill-box;
 }
