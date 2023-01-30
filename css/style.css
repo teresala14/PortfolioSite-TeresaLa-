@@ -220,6 +220,12 @@ margin-left: auto;
 margin-right: auto;
 width: 50%;
 }
+.persona{ 
+    max-width: 100%;
+    display: block;
+margin-left: auto;
+margin-right: auto;
+}
 
 .center{
    text-align: center
@@ -388,6 +394,9 @@ Large devices (1024px or larger)
     body{
         font-size: medium;
     }
+    img{
+        max-width: 70%;
+    }
     .col-lg-7 {
         width: 60%;
         padding-right: 5%;
@@ -409,6 +418,23 @@ Large devices (1024px or larger)
         border-radius: 8px;
         padding-bottom: 10px;
     }
+    .col-lg-2 {
+        max-width:250px;
+        margin-left:24px;
+        margin-right:24px;
+        align-items: center;
+        justify-self: center;
+    }
+    #designtext{
+        max-width:226px;
+    }
+    #designprocess{
+display:block;
+margin-left: auto;
+margin-right:auto;
+align-content: center;
+    }
+
     #toollist {
         width: 300px;
         margin: auto;
@@ -463,6 +489,29 @@ Large devices (1024px or larger)
         #work-text{
             margin-top: 5%;
         }
+        
+
+.cust-grid{
+
+display: flex;
+
+justify-content: center;
+
+flex-flow:row wrap;
+
+}
+
+.cust-grid-col{
+
+float:none;
+
+}
+.persona{ 
+    max-width: 100%;
+    display: block;
+margin-left: auto;
+margin-right: auto;
+}
 
     }
    
