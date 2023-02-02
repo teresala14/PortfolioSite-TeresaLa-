@@ -10,13 +10,14 @@
     <title> Teresa La </title>
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
 </head>
 <body class="container">
     <!--Header Section-->
     <header id="my-header" class="container">
+        <div class="navtoggle" id="myNavtoggle">
             <picture>
-                <source media="(min-width:650px)" srcset="img/logo.png">
-                <source media="(min-width:465px)" srcset="img/logo.png">
                 <img src="img/logo.png" class="logo" width="250" 
                 height="75" alt="Teresa La" style="width:auto;">
                 </picture>
@@ -24,9 +25,13 @@
     <ul class="navigation">
    <li><a href="index.html">Work</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href= "#my-footer" >Contact</a></li>
+    <li><a href= "#my-footer" onclick="menuToggle()">Contact </a></li>
+    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a> </li>
     </ul>
+</div>
 </nav>
+
+</div>
 </header>
 <main class="container">
     <div>
@@ -37,7 +42,7 @@
         <source media="(min-width:650px)" srcset="img/insideout/insideouttitleimage.png">
         <source media="(min-width:465px)" srcset="img/insideout/insideouttitleimage.png">
         <img src="img/insideout/insideouttitleimage.png"  width="400" 
-        height="300" id="banner-image" alt="Inside Out" style="width:auto;">
+        height="300" alt="Inside Out" class="center-image" style="width:auto;">
     </picture>
 </div>
 <div class= "column col-md-6 col-lg-5">
@@ -126,7 +131,7 @@
                     </div>
                 </div>
                     </div>
-                </div>
+                
           
 <!--Begin Research Section-->
 <div>
@@ -147,20 +152,24 @@
             <source media="(min-width:650px)" srcset="img/insideout/affinitymap.png">
             <source media="(min-width:465px)" srcset="img/insideout/affinitymap.png">
             <img src="img/insideout/affinitymap.png" class="center-image" width="400" 
-            height="500" alt="Affinity 
-        Map" style="width:auto;">
+            height="500" alt="Affinity Map" style="width:auto;">
         </picture>
         </div>
         <div>
         <p class="center"><em>Insights gathered from the research were arranged into an affinity map highlighting key findings and solutions</em></p>
     </div>
-        </div>
-    <div>
-        <h3>Surveys</h3>
-        <div>
+        <picture>
+            <source media="(min-width:650px)" srcset="img/insideout/interviewinsights.png">
+            <source media="(min-width:465px)" srcset="img/insideout/interviewinsights.png">
+            <img src="img/insideout/interviewinsights.png" class="center-image" width="400" 
+            height="500" alt="Interview Insights" style="width:auto;">
+        </picture>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Surveys</h3>
             <p>I conducted a survey via Google Forms with a total of 14 responses to better understand user needs and their current healthy habits. The results confirmed that while users care about improving their health, they lack the time to integrate those habits into their daily life.</p>
         </div>
-        <div>
+        <div class="col-md-6">>
             <picture>
                 <source media="(min-width:650px)" srcset="img/insideout/surveyinsights.insideout.png">
                 <source media="(min-width:465px)" srcset="img/insideout/surveyinsights.insideout.png">
@@ -221,25 +230,65 @@
 
                     From this point, I was able to identify each point in their task flow and begin to identify possible drop-off points as well as opportunities to improve the overall experience and determine what features to add to the final experience. I then proceeded to create the task flow for each persona to map each step from their entry point to their success criteria.</p>
             </div>
-            <div class="row">
-            <div class="col-md-6">
-                <picture> <!--User Journey-->
-                    <source media="(min-width:650px)" srcset="img/insideout/userjourneys.insideout.png">
-                    <source media="(min-width:465px)" srcset="img/insideout/userjourneys.insideout.png">
-                    <img src="img/insideout/userjourneys.insideout.png"  class="center-image" width="400" 
-                    height="500" alt="User Journeys" style="width:auto;">
-                </picture>
-                </div>
-                <div class="col-md-6">
-                <picture> <!--User Flows-->
-                    <source media="(min-width:650px)" srcset="img/insideout/taskflows.insideout.png">
-                    <source media="(min-width:465px)" srcset="img/insideout/taskflows.insideout.png">
-                    <img src="img/insideout/taskflows.insideout.png"  class="center-image" width="400" 
-                    height="500" alt="User Flows" style="width:auto;">
-                </picture>
-            </div>
-                </div>
-            </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                            <picture> <!--Michael-->
+                                <source media="(min-width:650px)" srcset="img/insideout/michael.uj.png">
+                                <source media="(min-width:465px)" srcset="img/insideout/michael.uj.png">
+                                <img src="img/insideout/michael.uj.png" class="center-image persona" width="300" 
+                                height="400" alt="Michael User Joureny" style="width:auto;">
+                            </picture>
+                            <p><em>Notable Opportunity: Adding star rating for recipes</em></p>
+                            </div>
+                            <div class="col-md-3">
+                                <picture> <!--Vanessa-->
+                                    <source media="(min-width:650px)" srcset="img/insideout/vanessa.uj.png">
+                                    <source media="(min-width:465px)" srcset="img/insideout/vanessa.uj.png">
+                                    <img src="img/insideout/vanessa.uj.png" class="center-image persona" width="300" 
+                                    height="400" alt="Vanessa User Journey" style="width:auto;">
+                                </picture>
+                                <p><em>Notable Opportunity: Adding separate page for weekly reminders</em>
+                                </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <picture> <!--Laura-->
+                                        <source media="(min-width:650px)" srcset="img/insideout/laura.uj.png">
+                                        <source media="(min-width:465px)" srcset="img/insideout/laura.uj.png">
+                                        <img src="img/insideout/laura.uj.png" class="center-image persona" width="300" 
+                                        height="400" alt="Laura User Journey" style="width:auto;">
+                                    </picture>
+                                    <p><em>Notable Opportunity: Manual-add for food items that are not searchable</em></p>
+                                    </div>
+                            
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                        <picture> <!--Michael-->
+                                            <source media="(min-width:650px)" srcset="img/insideout/taskflow.michael.png">
+                                            <source media="(min-width:465px)" srcset="img/insideout/taskflow.michael.png">
+                                            <img src="img/insideout/taskflow.michael.png" class="center-image persona" width="300" 
+                                            height="400" alt="Michael Task Flow" style="width:auto;">
+                                        </picture>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <picture> <!--Vanessa-->
+                                                <source media="(min-width:650px)" srcset="img/insideout/taskflow.vanessa.png">
+                                                <source media="(min-width:465px)" srcset="img/insideout/taskflow.vanessa.png">
+                                                <img src="img/insideout/taskflow.vanessa.png" class="center-image persona" width="300" 
+                                                height="400" alt="Vanessa Task FLow" style="width:auto;">
+                                            </picture>
+                                    
+                                            </div>
+                                            <div class="col-md-3">
+                                                <picture> <!--Laura-->
+                                                    <source media="(min-width:650px)" srcset="img/insideout/taskflow.laura.png">
+                                                    <source media="(min-width:465px)" srcset="img/insideout/taskflow.laura.png">
+                                                    <img src="img/insideout/taskflow.laura.png" class="center-image persona" width="300" 
+                                                    height="400" alt="Laura Task FLow" style="width:auto;">
+                                                </picture>
+                                                </div>
+                                        
+                                                </div>
      <div>
     <h3>Card Sorting</h3>
     <p>In order to create an intuitive information architecture, I conducted 5 remote card-sorting sessions for 4 categories with a total of 28 cards.
@@ -277,14 +326,7 @@
                     height="300" alt="Dasboard Iteration" style="width:auto;">
                 </picture>
             </div>
-            <div>
-                <picture> <!--Task Flow Sketches-->
-                    <source media="(min-width:650px)" srcset="img/insideout/taskflowsketches.png">
-                    <source media="(min-width:465px)" srcset="img/insideout/taskflowsketches.png">
-                    <img src="img/insideout/taskflowsketches.png" width="400" 
-                    height="300" alt="Task Flow Sketch" class="center-image" style="width:auto;">
-                </picture>
-                <p class="center"><em>Task flows were sketched first to ensure I was hitting every step in the flow before adding more detail to the design to limit errors in later iterations.</em> </p>
+                <p class="center">Task flows were sketched first to ensure I was hitting every step in the flow before adding more detail to the design to limit errors in later iterations.</p>
             </div>
             <picture> <!--Task Flow Sketches-->
                 <source media="(min-width:650px)" srcset="img/insideout/taskflowsketches.png">
@@ -294,8 +336,7 @@
             </picture>
             <p class="center"><em>Task Flow: Adding recipe to nutrition log </em></p>
 
-         </div>
-    </div>
+        </div>
     <div>
         <h3>Wireframes</h3>
         <p>Using Figma, I translated my sketches into mid-fidelity wireframes. These wireframes were the foundation of final design and layout. In these wireframes, I wanted to make sure the task of logging a recipe and logging workout were fully laid out as the main functions. There were two versions of the Eat and Move page that I designed, which would later be finalized after testing.
@@ -331,7 +372,8 @@
             </picture>
             <p class="center"><em>Usability Test Results: Errors ranked on severity from 1-5</em></p>
     </div>
-    <div>
+    <div class="row">
+        <div class="col-md-6 col-lg-5">
         <h3>Issue 1</h3>
         <p>All participants struggled to go back from the nutrition log. (high severity)
 
@@ -339,20 +381,18 @@
             
             A secondary test showed no further issues with the navigation from this page
             </p>
+        </div>
+        <div class="col-md-6 col-lg-7">
             <picture> <!--Issue 1-->
                 <source media="(min-width:650px)" srcset="img/insideout/issue1.insideout.png">
                 <source media="(min-width:465px)" srcset="img/insideout/issue1.Insideout.png">
                 <img src="img/insideout/issue1.insideout.png" class="center-image" width="400" 
                 height="300" alt="Issue 1" style="width:auto;">
             </picture>
+            </div>
     </div>
-    <div>
-        <h3>Issue 2</h3>
-        <p> When logging a workout or a food item, participants noted that there was no way to undo the action once the button was pressed. (High Severity)
-
-            Suggested Change: Updated dialogue box will be a CTA to either confirm or undo the action.
-            
-            </p>
+    <div class="row">
+        <div class="col-md-6 col-lg-7">
             <picture> <!--Issue 2-->
                 <source media="(min-width:650px)" srcset="img/insideout/issue2.insideout.png">
                 <source media="(min-width:465px)" srcset="img/insideout/issue2.insideout.png">
@@ -360,19 +400,30 @@
                 height="300" alt="Issue 2" class="center-image" style="width:auto;">
             </picture>
     </div>
-    <div>
+    <div id= "issue2" class="col-md-6 col-lg-5">
+        <h3>Issue 2</h3>
+        <p> When logging a workout or a food item, participants noted that there was no way to undo the action once the button was pressed. (High Severity)
+
+            Suggested Change: Updated dialogue box will be a CTA to either confirm or undo the action.
+            
+            </p>
+        </div>
+</div>
+<div class="row"></div>
+  <div id= "issue3" class="col-md-6 col-lg-5">
         <h3>Issue 3</h3>
         <p> Participants found the "Eat" page overcrowded and difficult to navigate. When searching for a specific button, it took much longer for them than expected, signifying that the cognitive load of the page was too high.
 
             Suggested Change: The layout of the page was changed to the same format as the "Move" page increasing cohesiveness of the overall design.
             </p>
-            <picture class="col-md-6"> <!--Issue 3-->
+        </div>
+        <div class="col-md-6 col-lg-7">
+            <picture> <!--Issue 3-->
                 <source media="(min-width:650px)" srcset="img/insideout/issue3.insideout.png">
                 <source media="(min-width:465px)" srcset="img/insideout/issue3.insideout.png">
                 <img src="img/insideout/issue3.insideout.png" class="center-image" width="400" 
                 height="300" alt="Issue 3" style="width:auto;">
             </picture>
-            <div class="col-md-6">
             <picture> <!--Preference Test-->
                 <source media="(min-width:650px)" srcset="img/insideout/preferencetest.insideout.png">
                 <source media="(min-width:465px)" srcset="img/insideout/preferencetest.insideout.png">
@@ -382,10 +433,9 @@
             <p class="center"><em>This was further tested through a preference test where 67% of participants preferred Design B.
             </em></p>
         </div>
-            </div>
+    </div>
     </div>
     <div>
-        <div class="row"></div>
        <h2>Implementation</h2> <!--Implementation Section Begin-->
 <div>
     <h3>Visual Design</h3>
@@ -469,7 +519,6 @@
 <div>
     <h4> Thank you for ready my case study!</h4>
 </div>
-</div>
 </main>
    <!--Footer-->
 <footer id="my-footer" class="container">
@@ -508,6 +557,10 @@
 </div>
 <p class="right">Copyright Teresa-La 2022</p>
 </footer>
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

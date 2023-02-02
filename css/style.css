@@ -75,29 +75,13 @@ h1, h2, h3, h4 {
     height: auto;
     max-width: 100%;
 }
-a {
-    color: #2F2183;
-    text-decoration: none; /* No underlining */
-  }
-  a:hover {
-    color: #2F2183;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  a:visited { /* visited link */
-    color: #aba6cd;
-  }
-  a:active { /* selected link */
-    color: #2F2185;
-  }
 
-a:focus {
-  color: #2F2183;
-  text-decoration: underline;
-}
 .button:visited {
     color: white
 }
-
+.icon:active{
+    color:white;
+}
 .button {
     display: inline-block;
     background-color:#2F2183;
@@ -141,38 +125,38 @@ a:focus {
     display: inline-block;
     padding: 15px 15px 15px 15px;
     width: 100%;
+    margin-left: auto;
+    margin-right:auto;
   }
 #my-header {
     display: block;
     background-color: #4A557B;
     width:auto;
     color: white;
-    text-align: center;
-    padding: 5px;
+    padding:10px 0 4px;
     border: 5px solid #4A557B;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 10px 10px;
     position: relative;
 }
 .logo {
-    max-width: 250px;
+    max-width: 150px;
 }
 #banner-image{
     max-width: 100%;
     margin-left:10%;
     margin-right: 10%;
 }
-nav{
-    display: inline-block;
-    width: 100%;
-}
+
 nav > ul{
     list-style-type: none;
     padding: 0;
+    margin:0;
 }
-nav > ul> li{
-    display: inline-block;
-}
+main {
+    padding-top: -78px;
+  }
+
 
 /*////////HERO CSS///////*/ 
 
@@ -192,7 +176,7 @@ nav > ul> li{
    display:block;
     margin-left:auto;
     margin-right:auto;
-    max-width: 100%;
+    max-width: 40%;
 }
  #hero-svg {
     height:auto;
@@ -240,7 +224,33 @@ margin-left:20px;
 margin-right:20px;
 }
 
-
+.navtoggle li:not(:last-child){
+    display:none;
+}
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+  .navtoggle li .icon {
+    position: absolute;
+    right:0px;
+    top: 2px;
+    font-size: 16px;
+  }
+  .navtoggle.responsive nav {
+    padding: 12px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 5px 0;
+    border-top: 0.5px solid rgb(163, 164, 215);
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+  .icon {
+    margin-top: 10px;
+  }
 
 
 #my-footer {
@@ -312,9 +322,24 @@ Medium devices (640px and larger)
         float: right;
         margin-top: 20px;
         padding-right:15px;
+    
+     }
+     nav > ul> li{
+        display: inline-block;
     }
+    .navtoggle li:not(:last-child){
+        display:inline-block;
+    }
+    .navtoggle li:last-child {
+        display: none;
+      }
+    nav > ul {
+        margin: 1em 0;
+      }
+     
     .logo {
         margin-top: 10px;
+        min-width: 200px;
     }
     #about-page h3{
         margin-top: 0;
@@ -331,15 +356,14 @@ Medium devices (640px and larger)
         text-align:center;
     }
     #hero-image{
-        height: 233px;
-        width: 233px;
+        max-width:80%;
     
     }
-    #hero span {
+    h1>span {
         font-size:small;
         display: block;
         width: 100%;
-        padding-top: 30px;
+        padding-top: 5px;
         padding-left: 10px;
         margin-right: 0;
     }
@@ -395,16 +419,23 @@ Large devices (1024px or larger)
         font-size: medium;
     }
     img{
-        max-width: 70%;
+        max-width: 80%;
+    }
+
+    
+    #hero-svg{
+        width:100%;
     }
     .col-lg-7 {
         width: 60%;
-        padding-right: 5%;
     }
+    
     .col-lg-5 {
         width: 40%;
-        margin-top: 5%;
-        padding-left: 5%
+        padding-left: 2%;
+        padding-top:3%;
+      padding-right: 10%;
+
     }
     .col-lg-8 {
         width: 60%;
@@ -425,6 +456,7 @@ Large devices (1024px or larger)
         align-items: center;
         justify-self: center;
     }
+
     #designtext{
         max-width:226px;
     }
@@ -465,7 +497,7 @@ align-content: center;
     html {
         margin-left: auto;
         margin-right: auto;
-        max-width: 1200px;
+        max-width: 1500px;
     }
     #hero span {
         font-size:medium;
@@ -486,10 +518,9 @@ align-content: center;
         #about-title{
             margin-bottom:0%;
         }
-        #work-text{
-            margin-top: 5%;
-        }
-        
+    #hero-image{
+        max-width: 50%;
+    }
 
 .cust-grid{
 
@@ -512,8 +543,19 @@ float:none;
 margin-left: auto;
 margin-right: auto;
 }
+#issue2{
+    height:500px;
+    padding-top:10%;
+    padding-bottom:5%;
+
+}
+#issue3{
+    height:500px;
+    padding-top:10%;
+    padding-bottom:5%;
 
     }
+}
    
         
         
