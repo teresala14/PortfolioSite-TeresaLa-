@@ -22,10 +22,14 @@ h1, h2, h3, h4 {
     line-height: 1.4em;
 }
 h1 {
-    margin: 10% auto;
+    margin: 5% auto;
     display: block;
-    font-size: 1.8em;
-    color: #2F2183;
+    font-size: 1.7em;
+    color:#2F2183;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border:#2F2183;
+    background-color: #ffffff;
     font-weight: 600;
     letter-spacing: 10px;
   
@@ -35,23 +39,32 @@ h1 > span {
     font-size: 0.6em;
     color: #4A557B;
 }
+#hero-text{
+font-size: 1.2em;
+}
 h2 {
-    margin: 5% auto;
-    font-size: 1.75em;
+    margin: 10% auto;
+    font-size: 1.6em;
     color: #4A557B;
     font-weight: 600;
     letter-spacing: 5px;
+    width:100%;
+    padding:10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border:#2F2183;
+    background-color: #ffffff;
 }
 h3 {
     margin: 5% auto;
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #5E7AAE;
     font-weight: 600;
     letter-spacing: 5px;
 }
 h4 {
     margin: 10% auto;
-    font-size: 1.15em; 
+    font-size: 1.2em; 
     color: #5E7AAE;
     font-weight: 600;
     letter-spacing: 5px;
@@ -65,17 +78,16 @@ img {
     margin-right: auto;
     
 }
-svg{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
 h1, h2, h3, h4 {
     width: auto;
     height: auto;
     max-width: 100%;
 }
-
+a{
+    text-decoration: none;
+}
 .button:visited {
     color: white
 }
@@ -169,6 +181,7 @@ main {
 }
 
 #hero h1{
+    padding-top:10px;
     text-align:center
 
 }
@@ -179,7 +192,9 @@ main {
     max-width: 40%;
 }
  #hero-svg {
-    height:auto;
+    display:inline-block;
+ margin-left: 50%;
+    height:30px;
     width: auto;
     max-width: 100%;
     padding: 0;
@@ -219,7 +234,7 @@ margin-right: auto;
     display:inline-block;
     max-width:80%;
 }
-#work-text{
+#io-worktext, #sd-worktext{
 margin-left:20px;
 margin-right:20px;
 }
@@ -270,6 +285,9 @@ margin-right:20px;
 }
 #footer-title {
     color: white;
+    background: none;
+    box-shadow: none;
+    width: 100%;
 }
 .row {
     margin: 25px 0;
@@ -283,7 +301,7 @@ margin-right:20px;
   }
   
 
-#about-title {
+#title {
     width: 100%;
     text-align: center;
     padding: 20px;
@@ -317,6 +335,9 @@ Medium devices (640px and larger)
         text-align: unset;
         padding: 10px 0 0 13px;
     }
+    #hero-text{
+        font-size: 1.8em;
+        }
     nav {
         width:auto;
         float: right;
@@ -349,6 +370,18 @@ Medium devices (640px and larger)
         font-size: 14px;
     
     }
+    h2 {
+        margin: 5% auto;
+        margin-top: 5%;
+        margin-bottom:5%;
+        font-size: 1.6em;
+        color: #4A557B;
+        font-weight: 600;
+        letter-spacing: 5px;
+        width:30%;
+        padding:10px;
+        }
+
     h1, h2, h3, h4 {
         margin: 5% auto;
     }
@@ -373,16 +406,55 @@ Medium devices (640px and larger)
     .col-md-6 {
         width: 50%;
     }
+    .col-md-7 {
+        padding-right: 2%;
+        width: 55%;
+    }
+    
+    .col-md-5 {
+        width: 35%;
+        margin-left: 2%;
+        padding-top:3%;
+      margin-top: 2%;
+
+    }
     .col-md-3 {
         margin-top: 5%;
         width: 32%;
         margin-bottom: 5%;
 
     }
-    #work-text{
+    .col-md-2{
+        margin-left:20px;
+        margin-right:20px;
+    }
+    #io-worktext, #sd-worktext{
+      
         margin:auto;
     
     }
+    #skills-tools{
+        margin-left:20%;
+    }
+    #skilllist{
+        padding-right:50px;
+    width: 175px;
+    border-radius: 8px;
+    color: rgb(75, 75, 125);
+    background-color:#ffffff;
+    box-shadow: 0px 4px 20px #5E7AAE;}
+
+    #toollist{
+        width: 175px;
+        padding-left:20px;
+        border-radius: 8px;
+        color: rgb(75, 75, 125);
+        background-color:#ffffff;
+        box-shadow: 0px 4px 20px #5E7AAE;;
+    }
+.skills{
+    width: 200px;
+}
     .button{
         margin-top: 5px;
     }
@@ -403,7 +475,26 @@ Medium devices (640px and larger)
         padding-left: 10px;
         padding-right: 10px;
       }
+     
+#title {
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+}
+.final-screens{
+    margin-top: 10%;
+    margin-bottom:10%;
+}
+#io-banner, #sd-banner{
+    display: block;
+    max-width: 300px;
+   margin-right: 5%;
+}
 
+#hero-svg{
+    width:40%;
+     margin-left: 65%;
+ }
 }
     
 
@@ -415,17 +506,18 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-    body{
-        font-size: medium;
+    .story-text{
+        font-size: 14px;
     }
+    body {
+        display: inline-block;
+        font-size: 16px;}
+    
     img{
         max-width: 80%;
     }
 
     
-    #hero-svg{
-        width:100%;
-    }
     .col-lg-7 {
         width: 60%;
     }
@@ -434,7 +526,8 @@ Large devices (1024px or larger)
         width: 40%;
         padding-left: 2%;
         padding-top:3%;
-      padding-right: 10%;
+      padding-right: 5%;
+      margin-top: 2%;
 
     }
     .col-lg-8 {
@@ -443,7 +536,7 @@ Large devices (1024px or larger)
     }
     .col-lg-4 {
         width: 28%;
-        margin-top:20%;
+        margin-top:0;
         padding-top: 10px;
         padding-left: 30px;
         border-radius: 8px;
@@ -492,18 +585,21 @@ align-content: center;
             padding-bottom: 10%;
         border-radius: 8px;}
         
-        
+        #skills-tools{
+            margin-left:0;}
 
-    html {
+html {
         margin-left: auto;
         margin-right: auto;
+        margin-top:0;
+        margin-bottom:0;
         max-width: 1500px;
     }
+
     #hero span {
         font-size:medium;
         display: block;
         width: 100%;
-        padding-top: 30px;
         padding-left: 10px;
         margin-right: 0;}
 
@@ -513,13 +609,14 @@ align-content: center;
             margin-top: 40%;
         }
         #about-image {
-            max-width: 40%;
+            max-width: 20%;
         }
-        #about-title{
-            margin-bottom:0%;
+        #title{
+            margin-bottom:2%;
         }
     #hero-image{
         max-width: 50%;
+        padding-top: 10px;
     }
 
 .cust-grid{
@@ -543,6 +640,10 @@ float:none;
 margin-left: auto;
 margin-right: auto;
 }
+#issue1{
+    padding-top:50px;
+    max-width: 100%;
+}
 #issue2{
     height:500px;
     padding-top:10%;
@@ -554,6 +655,12 @@ margin-right: auto;
     padding-top:10%;
     padding-bottom:5%;
 
+    }
+    #resume-button{
+        margin-top:10%;
+    }
+    #sd-banner, #io-banner{
+        max-width: 500px;
     }
 }
    

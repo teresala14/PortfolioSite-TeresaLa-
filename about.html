@@ -28,44 +28,45 @@
     <li><a href= "#my-footer" onclick="menuToggle()">Contact </a></li>
     <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a> </li>
     </ul>
-</div>
+
 </nav>
 
 </div>
 </header>
-
 <main>
     <div><!--Begin About Section-->
         <div class="container">
-            <h1 id= "about-title">About</h1>
+            <h1 id= "title">About</h1>
         <div>
             <div class="container">
                 <div class= "col-lg-8">
-                    <h2 id=my-story class="center">My Story</h2>
                     <div>
             <picture>
-                <source media="(min-width:650px)" srcset="img/aboutphoto.png">
-                <source media="(min-width:465px)" srcset="img/aboutphoto.png">
                 <img src="img/aboutphoto.png" id= "about-image" class= "center-image" width= "200" 
                 height="300" alt="My Photo" style="width:auto;">
             </picture>
         </div>
-                    <p>My name is Teresa La and I am a UX/UI designer based in the NYC area. I graduated from Rutgers University with a degree in marketing because I found that the psychology of the mind of the consumer fascinating. I leveraged that knowledge in the restaurant business as a manager while utilizing social media and marketing tactics to increase turnover during Covid-19 when small businesses were struggling to adapt. At the same time I freelanced as a marketing analyst, identifying possible business opportunities.</p>
-                    <div class="row"></div>
-                    <p>During that time, I discovered UX design and wanted to pursue the field and began my training with Career Foundry. I learned techniques for design, research, information architecture, and how to create overall intuitive experiences.
+        <h2 class="center">My Story</h2>
+                    <p class="story-text">My name is Teresa La and I am a UX/UI designer based in the NYC area. I graduated from Rutgers University with a degree in marketing because I found that the psychology of the mind of the consumer fascinating. 
+                        I leveraged that knowledge in the restaurant business as a manager while utilizing social media and marketing tactics to increase turnover during Covid-19 when small businesses were struggling to adapt. 
+                        At the same time I freelanced as a marketing analyst, identifying possible business opportunities.</p>
+
+                    <p class="story-text" >During that time, I discovered UX design and wanted to pursue the field and began my training with Career Foundry. I learned techniques for design, research, information architecture, and how to create overall intuitive experiences.
                         
-                        In my free time, I developed a love for cooking after a long history in the food industry and I’m constantly trying out new recipes. When I’m not working you can find me with a new book, in the kitchen, or outside walking my German Shepherd.</p>
-<div class="center">
-                        <a href="files/CV.pdf" class="button" download >Download My Resume </a>
-                    </div>
+                       
+                     In my free time, I developed a love for cooking after a long history in the food industry and I’m constantly trying out new recipes. When I’m not working you can find me with a new book, in the kitchen, or outside walking my German Shepherd.</p>
+                
+                        <a href="file/CV.pdf" id="resume-button" class="button" download="TeresaLa.Resume"> Download My Resume </a>
+                    
                         </div>
-                        <div class= "column col-lg-4">
+                        
+                        <div id="skills-tools" class= "column col-lg-4 ">
                             <div>
                                 <h3 class="center">Skills & Tools</h3>
-                            </div>
-                            <div id="skilllist">
-                            <h4>Relevant skills</h4>
-                            <ul>
+                            <div class="row cust-grid">
+                            <div id="skilllist" class= "column col-md-2">
+                            <h4 class="center">Relevant skills</h4>
+                            <ul class="skills story-text">
                                 <li>Research </li>
                                 <li>Usability Testing </li>
                                 <li>User Flows </li>
@@ -73,11 +74,12 @@
                                 <li>Wireframing</li>
                                 <li>HTML</li>
                                 <li>CSS</li>
+                                <li>Javascript</li>
                             </ul>
                         </div>
-                            <div id="toollist">
-                                <h4> Tools I Use</h4>
-                                <ul>
+                            <div id="toollist" class= "column col-md-2">
+                                <h4 class="center"> Tools I Use</h4>
+                                <ul class="story-text">
                                     <li>Figma </li>
                                     <li>Miro </li>
                                     <li>Balsamiq </li>
@@ -85,7 +87,9 @@
                                     <li>Github</li>
                                     <li>Visual Studio</li>
                                 </ul>
+                            </div>
                     </div>
+                </div>
                         </div>
                         
             </div>
@@ -96,7 +100,7 @@
 <!--Footer-->
 <footer id="my-footer" class="container">
 
-    <h2 class=center id="footer-title">Get in Touch</h2>
+    <h2 class="center" id="footer-title">Get in Touch</h2>
 <p class="center">For any questions or inquiries you can send me an email or connect with me through Linkedin!</p>
 <div class="center">
 <a href="mailto:teresala.45@gmail.com" class="button contact">Email Me</a>
@@ -105,24 +109,18 @@
 <div class="center">
 <a href="https://www.linkedin.com/in/teresa-la/" target="_blank">
     <picture>
-        <source media="(min-width:650px)" srcset="img/linkedinicon.png">
-        <source media="(min-width:465px)" srcset="img/linkedinicon.png">
         <img src="img/linkedinicon.png" class= "social-link" width="25" 
         height="25" alt="linkedin" style="width:auto;">
         </picture>
 </a>
 <a href="https://www.instagram.com/teresa_la_/?hl=en" target="_blank">
     <picture>
-        <source media="(min-width:650px)" srcset="img/instagramicon.png">
-        <source media="(min-width:465px)" srcset="img/instagramicon.png">
         <img src="img/Instagramicon.png" class= "social-link" width="25" 
         height="25" alt="instagram" style="width:auto;">
         </picture>
 </a>
 <a href="https://dribbble.com/teresala14" target="_blank">
     <picture>
-        <source media="(min-width:650px)" srcset="img/dribbleicon.png">
-        <source media="(min-width:465px)" srcset="img/dribbleicon.png">
         <img src="img/dribbleicon.png"  class= "social-link" width="25" 
         height="25" alt="dribble" style="width:auto;">
         </picture>
