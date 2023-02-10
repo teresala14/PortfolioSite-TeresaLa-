@@ -475,11 +475,14 @@ Medium devices (640px and larger)
         padding-left: 10px;
         padding-right: 10px;
       }
-     
+    #io-title{
+        max-height:200px;
+    }
 #title {
     width: 40%;
     text-align: center;
     padding: 20px;
+    margin-top:2%;
 }
 .final-screens{
     margin-top: 10%;
