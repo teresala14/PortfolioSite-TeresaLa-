@@ -1,171 +1,321 @@
-<!Doctype html>
+<!DOCTYPE html>
 
-    <html lang="en" dir="ltr">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset= "utf-8">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap" rel="stylesheet">
-    <title> Teresa La </title>
-    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-
-</head>
-<body class="container">
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Teresa La</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="container">
     <!--Header Section-->
     <header id="my-header" class="container">
-        <div class="navtoggle" id="myNavtoggle">
-            <picture>
-                <img src="img/logo.png" class="logo" width="250" 
-                height="75" alt="Teresa La" style="width:auto;">
-                </picture>
-<nav>
-    <ul class="navigation">
-   <li><a href="index.html">Work</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href= "#my-footer" onclick="menuToggle()">Contact </a></li>
-    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a> </li>
-    </ul>
-
-</nav>
-
-</div>
-</header>
-<!--Hero Section-->
-<main>
-<div id="hero"> 
-    <div class= "container">
-        <div class= "col-md-6"> <!--profile image-->
+      <div class="navtoggle" id="myNavtoggle">
         <picture>
-            <img  id="hero-image" src="img/profilephoto.png" width="150" 
-            height="150" alt="Teresa La" style="width:auto;">
-            </picture>
-        </div>
-        <div class= "col-md-6"> <!--Title for hero section-->
-     
-        <h1 id="hero-text"><span>Hello,</span> I'm Teresa!
-    <span>UX/UI designer</span>
-    <span>Based in NYC</span>
-    <svg id="hero-svg" width="153" height="40" viewBox="0 0 153 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path class="uiux" d="M19.877 50.192C18.2877 50.192 17.045 49.7493 16.149 48.864C15.253 47.9787 14.805 46.7147 14.805 45.072V38.8H17.397V44.976C17.397 46.0427 17.6157 46.8107 18.053 47.28C18.4903 47.7493 19.1037 47.984 19.893 47.984C20.6823 47.984 21.2957 47.7493 21.733 47.28C22.1703 46.8107 22.389 46.0427 22.389 44.976V38.8H24.949V45.072C24.949 46.7147 24.501 47.9787 23.605 48.864C22.709 49.7493 21.4663 50.192 19.877 50.192ZM38.4416 50V38.8H41.0336V50H38.4416ZM52.7669 51.6L58.0469 36.528H60.2709L54.9909 51.6H52.7669ZM76.7957 50.192C75.2064 50.192 73.9637 49.7493 73.0677 48.864C72.1717 47.9787 71.7237 46.7147 71.7237 45.072V38.8H74.3157V44.976C74.3157 46.0427 74.5344 46.8107 74.9717 47.28C75.4091 47.7493 76.0224 47.984 76.8117 47.984C77.6011 47.984 78.2144 47.7493 78.6517 47.28C79.0891 46.8107 79.3077 46.0427 79.3077 44.976V38.8H81.8677V45.072C81.8677 46.7147 81.4197 47.9787 80.5237 48.864C79.6277 49.7493 78.3851 50.192 76.7957 50.192ZM94.0804 50L98.8964 43.36V45.248L94.2884 38.8H97.2324L100.416 43.296L99.1844 43.312L102.32 38.8H105.136L100.56 45.136V43.28L105.408 50H102.416L99.1204 45.248H100.304L97.0564 50H94.0804Z" fill="#0E2971"/>
-        <g class="wheel-right" filter="url(#filter0_d_309_4790)">
-        <path d="M110.327 27.673C107.637 27.673 105.424 25.5349 105.424 22.9356C105.424 20.3364 107.637 18.1982 110.327 18.1982C113.017 18.1982 115.23 20.3364 115.23 22.9356C115.23 25.5349 113.017 27.673 110.327 27.673ZM110.327 19.2044C108.201 19.2044 106.465 20.8814 106.465 22.9356C106.465 24.9899 108.201 26.6668 110.327 26.6668C112.453 26.6668 114.189 24.9899 114.189 22.9356C114.189 20.8814 112.453 19.2044 110.327 19.2044Z" fill="#3A8AB7"/>
-        <path d="M111.803 32.9557H108.852L108.028 30.5241C107.463 30.3564 106.943 30.1468 106.422 29.8953L104.035 31.0691L101.953 29.0568L103.168 26.751C102.907 26.2479 102.647 25.7448 102.517 25.1998L100 24.4033V21.5524L102.517 20.7559C102.69 20.2109 102.907 19.7078 103.168 19.2047L101.953 16.8989L104.035 14.8866L106.422 16.0604C106.943 15.8089 107.463 15.5574 108.028 15.4316L108.852 13H111.803L112.627 15.4316C113.191 15.5993 113.712 15.8089 114.233 16.0604L116.619 14.8866L118.702 16.8989L117.487 19.2047C117.747 19.7078 118.008 20.2109 118.138 20.7559L120.655 21.5524V24.4033L118.138 25.1998C117.964 25.7448 117.747 26.2479 117.487 26.751L118.702 29.0568L116.619 31.0691L114.233 29.8953C113.712 30.1468 113.191 30.3984 112.627 30.5241L111.803 32.9557ZM109.59 31.9915H111.065L111.846 29.7276L112.106 29.6437C112.757 29.476 113.365 29.2245 113.972 28.8891L114.233 28.7633L116.446 29.8534L117.487 28.8472L116.359 26.7091L116.489 26.4575C116.836 25.9125 117.096 25.2837 117.27 24.6548L117.357 24.4033L119.7 23.6486V22.2232L117.357 21.4686L117.27 21.2171C117.096 20.5882 116.836 19.9593 116.489 19.4143L116.359 19.1628L117.487 17.0247L116.446 16.0185L114.233 17.1085L113.972 16.9828C113.408 16.6474 112.757 16.3958 112.106 16.2281L111.846 16.1443L111.065 13.8804H109.59L108.809 16.1443L108.548 16.2281C107.897 16.3958 107.29 16.6474 106.682 16.9828L106.422 17.1085L104.209 16.0185L103.168 17.0247L104.296 19.1628L104.166 19.4143C103.818 19.9593 103.558 20.5882 103.385 21.2171L103.298 21.4686L100.955 22.2232V23.6486L103.298 24.4033L103.385 24.6548C103.558 25.2837 103.818 25.9125 104.166 26.4575L104.296 26.7091L103.168 28.8472L104.209 29.8534L106.422 28.7633L106.682 28.8891C107.246 29.2245 107.897 29.476 108.548 29.6437L108.809 29.7276L109.59 31.9915Z" fill="#3A8AB7"/>
-        </g>
-        <g class="wheel-left" filter="url(#filter1_d_309_4790)">
-        <path d="M128.34 37.94C125.824 37.94 123.754 36.0427 123.754 33.7361C123.754 31.4296 125.824 29.5322 128.34 29.5322C130.857 29.5322 132.927 31.4296 132.927 33.7361C132.927 36.0427 130.857 37.94 128.34 37.94ZM128.34 30.4251C126.352 30.4251 124.728 31.9132 124.728 33.7361C124.728 35.5591 126.352 37.0472 128.34 37.0472C130.329 37.0472 131.953 35.5591 131.953 33.7361C131.953 31.9132 130.329 30.4251 128.34 30.4251Z" fill="#7978AE"/>
-        <path d="M129.72 42.6274H126.961L126.189 40.4696C125.662 40.3208 125.175 40.1348 124.688 39.9116L122.455 40.9533L120.507 39.1676L121.644 37.1214C121.4 36.675 121.157 36.2285 121.035 35.7449L118.681 35.0381V32.5083L121.035 31.8014C121.197 31.3178 121.4 30.8714 121.644 30.4249L120.507 28.3788L122.455 26.5931L124.688 27.6347C125.175 27.4115 125.662 27.1883 126.189 27.0767L126.961 24.9189H129.72L130.492 27.0767C131.019 27.2255 131.506 27.4115 131.993 27.6347L134.225 26.5931L136.174 28.3788L135.037 30.4249C135.281 30.8714 135.524 31.3178 135.646 31.8014L138 32.5083V35.0381L135.646 35.7449C135.484 36.2285 135.281 36.675 135.037 37.1214L136.174 39.1676L134.225 40.9533L131.993 39.9116C131.506 40.1348 131.019 40.358 130.492 40.4696L129.72 42.6274ZM127.65 41.7717H129.03L129.761 39.7628L130.004 39.6884C130.613 39.5396 131.181 39.3164 131.75 39.0187L131.993 38.9071L134.063 39.8744L135.037 38.9815L133.982 37.0842L134.104 36.861C134.428 36.3774 134.672 35.8193 134.834 35.2613L134.915 35.0381L137.107 34.3684V33.1035L134.915 32.4339L134.834 32.2107C134.672 31.6526 134.428 31.0946 134.104 30.6109L133.982 30.3877L135.037 28.4904L134.063 27.5975L131.993 28.5648L131.75 28.4532C131.222 28.1556 130.613 27.9324 130.004 27.7835L129.761 27.7091L129.03 25.7002H127.65L126.92 27.7091L126.676 27.7835C126.068 27.9324 125.499 28.1556 124.931 28.4532L124.688 28.5648L122.618 27.5975L121.644 28.4904L122.699 30.3877L122.577 30.6109C122.253 31.0946 122.009 31.6526 121.847 32.2107L121.765 32.4339L119.574 33.1035V34.3684L121.765 35.0381L121.847 35.2613C122.009 35.8193 122.253 36.3774 122.577 36.861L122.699 37.0842L121.644 38.9815L122.618 39.8744L124.688 38.9071L124.931 39.0187C125.459 39.3164 126.068 39.5396 126.676 39.6884L126.92 39.7628L127.65 41.7717Z" fill="#7978AE"/>
-        </g>
-        <defs>
-        <filter id="filter0_d_309_4790" x="85" y="0" width="50.6545" height="49.9556" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feflood flood-opacity="0" result="BackgroundImageFix"/>
-        <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-        <feoffset dy="2"/>
-        <fegaussianblur stdDeviation="7.5"/>
-        <fecomposite in2="hardAlpha" operator="out"/>
-        <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_309_4790"/>
-        <feblend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_309_4790" result="shape"/>
-        </filter>
-        <filter id="filter1_d_309_4790" x="103.681" y="11.9189" width="49.3191" height="47.7085" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feflood flood-opacity="0" result="BackgroundImageFix"/>
-        <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-        <feoffset dy="2"/>
-        <fegaussianblur stdDeviation="7.5"/>
-        <fecomposite in2="hardAlpha" operator="out"/>
-        <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_309_4790"/>
-        <feblend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_309_4790" result="shape"/>
-        </filter>
-        </defs>
-        </svg>
-        
-</h1>
-</div>
-</div>
-
-<!--Work Section-->
-<div id="my-work">
-    <div class="container">
-<h1 id="title" class="center">My Work</h1><!--Project One Section-->
-</div>
-    
-    <!--both columns for project-->
-    <div class="row">
-        <div class="column col-md-6 col-lg-7">
-        <picture>
-        <img src="img/insideout/insideoutlogo.png" id="io-banner" class="center-image" width="400" 
-        height="500" alt="Inside Out" style="width:auto;">
-    </picture>
-        </div> <!--end first column-->
-        <div id="io-worktext" class= "column col-md-6 col-lg-5"> <!--second column (for text)-->
-            <h3>Inside Out</h3> <!--project 1 title-->
-            <p>Inside Out is a health-app for tracking exercise and nutrition</p>
-            <a href="insideout.html" class="button">View Project</a> <!--button link-->
-            </div>
-        </div>
-        </div> <!--end second column-->
-            <!--Project Two Section-->
-<div><!-- both columns for project-->
-    <div class="row">
-        <div class="column col-md-6 col-lg-7">
-        <picture>
-            <img src="img/somedumpling/somdumpling.png" id="sd-banner" class="center-image" width="400" 
-            height="500" alt="Some Dumpling" style="width:auto;">
+          <img
+            src="img/logo.png"
+            class="logo"
+            width="250"
+            height="75"
+            alt="Teresa La"
+            style="width: auto"
+          />
         </picture>
-    </div>
-
-        <!-- end both column -->
-        <!--begin Some Dumpling second column-->
-        <div id="sd-worktext" class="column col-md-6 col-lg-5" >
-    <h3>Some Dumpling</h3><!-- project 2 title-->
-       <p>Some Dumpling a small business delivering fresh-frozen dumplings</p>
-      <a href="#" class="button">View Project</a>
-    </div><!-- end second column -->
-  </div><!-- end entire row -->
-  </div>
-  </div>
-</main>
-    
-
-<!--Footer-->
-<footer id="my-footer" class="container">
-
-        <h2 class="center" id="footer-title">Get in Touch</h2>
-    <p class="center">For any questions or inquiries you can send me an email or connect with me through Linkedin!</p>
-<div class="center">
-    <a href="mailto:teresala.45@gmail.com" class="button contact">Email Me</a>
-</div>
-    <!--Social Media Links-->
-    <div class="center">
-    <a href="https://www.linkedin.com/in/teresa-la/" target="_blank">
-        <picture>
-            <img src="img/linkedinicon.png" class= "social-link" width="25" 
-            height="25" alt="linkedin" style="width:auto;">
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#my-footer" onclick="menuToggle()">Contact </a></li>
+            <li>
+              <a href="javascript:void(0);" class="icon" onclick="menuToggle()"
+                ><i class="fas fa-bars"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Hero Section-->
+    <main>
+      <div id="hero">
+        <div class="container">
+          <div class="col-md-6">
+            <!--profile image-->
+            <picture>
+              <img
+                id="hero-image"
+                src="img/profilephoto.png"
+                width="150"
+                height="150"
+                alt="Teresa La"
+                style="width: auto"
+              />
             </picture>
-    </a>
-    <a href="https://www.instagram.com/teresa_la_/?hl=en" target="_blank">
-        <picture>
-            <img src="img/Instagramicon.png" class= "social-link" width="25" 
-            height="25" alt="instagram" style="width:auto;">
-            </picture>
-    </a>
-    <a href="https://dribbble.com/teresala14" target="_blank">
-        <picture>
-            <img src="img/dribbleicon.png"  class= "social-link" width="25" 
-            height="25" alt="dribble" style="width:auto;">
-            </picture>
-    </a>
-</div>
-<p class="right">Copyright Teresa-La 2022</p>
-</footer>
-<script
-  src="https://code.jquery.com/jquery-3.6.3.min.js"
-  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-  crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
-</body>
+          </div>
+          <div class="col-md-6">
+            <!--Title for hero section-->
+
+            <h1 id="hero-text">
+              <span>Hello,</span> I'm Teresa!
+              <span>UX/UI Designer</span>
+              <span>Based in NYC</span>
+              <svg
+                id="hero-svg"
+                width="153"
+                height="40"
+                viewBox="0 0 153 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="uiux"
+                  d="M19.877 50.192C18.2877 50.192 17.045 49.7493 16.149 48.864C15.253 47.9787 14.805 46.7147 14.805 45.072V38.8H17.397V44.976C17.397 46.0427 17.6157 46.8107 18.053 47.28C18.4903 47.7493 19.1037 47.984 19.893 47.984C20.6823 47.984 21.2957 47.7493 21.733 47.28C22.1703 46.8107 22.389 46.0427 22.389 44.976V38.8H24.949V45.072C24.949 46.7147 24.501 47.9787 23.605 48.864C22.709 49.7493 21.4663 50.192 19.877 50.192ZM38.4416 50V38.8H41.0336V50H38.4416ZM52.7669 51.6L58.0469 36.528H60.2709L54.9909 51.6H52.7669ZM76.7957 50.192C75.2064 50.192 73.9637 49.7493 73.0677 48.864C72.1717 47.9787 71.7237 46.7147 71.7237 45.072V38.8H74.3157V44.976C74.3157 46.0427 74.5344 46.8107 74.9717 47.28C75.4091 47.7493 76.0224 47.984 76.8117 47.984C77.6011 47.984 78.2144 47.7493 78.6517 47.28C79.0891 46.8107 79.3077 46.0427 79.3077 44.976V38.8H81.8677V45.072C81.8677 46.7147 81.4197 47.9787 80.5237 48.864C79.6277 49.7493 78.3851 50.192 76.7957 50.192ZM94.0804 50L98.8964 43.36V45.248L94.2884 38.8H97.2324L100.416 43.296L99.1844 43.312L102.32 38.8H105.136L100.56 45.136V43.28L105.408 50H102.416L99.1204 45.248H100.304L97.0564 50H94.0804Z"
+                  fill="#0E2971"
+                />
+                <g class="wheel-right" filter="url(#filter0_d_309_4790)">
+                  <path
+                    d="M110.327 27.673C107.637 27.673 105.424 25.5349 105.424 22.9356C105.424 20.3364 107.637 18.1982 110.327 18.1982C113.017 18.1982 115.23 20.3364 115.23 22.9356C115.23 25.5349 113.017 27.673 110.327 27.673ZM110.327 19.2044C108.201 19.2044 106.465 20.8814 106.465 22.9356C106.465 24.9899 108.201 26.6668 110.327 26.6668C112.453 26.6668 114.189 24.9899 114.189 22.9356C114.189 20.8814 112.453 19.2044 110.327 19.2044Z"
+                    fill="#3A8AB7"
+                  />
+                  <path
+                    d="M111.803 32.9557H108.852L108.028 30.5241C107.463 30.3564 106.943 30.1468 106.422 29.8953L104.035 31.0691L101.953 29.0568L103.168 26.751C102.907 26.2479 102.647 25.7448 102.517 25.1998L100 24.4033V21.5524L102.517 20.7559C102.69 20.2109 102.907 19.7078 103.168 19.2047L101.953 16.8989L104.035 14.8866L106.422 16.0604C106.943 15.8089 107.463 15.5574 108.028 15.4316L108.852 13H111.803L112.627 15.4316C113.191 15.5993 113.712 15.8089 114.233 16.0604L116.619 14.8866L118.702 16.8989L117.487 19.2047C117.747 19.7078 118.008 20.2109 118.138 20.7559L120.655 21.5524V24.4033L118.138 25.1998C117.964 25.7448 117.747 26.2479 117.487 26.751L118.702 29.0568L116.619 31.0691L114.233 29.8953C113.712 30.1468 113.191 30.3984 112.627 30.5241L111.803 32.9557ZM109.59 31.9915H111.065L111.846 29.7276L112.106 29.6437C112.757 29.476 113.365 29.2245 113.972 28.8891L114.233 28.7633L116.446 29.8534L117.487 28.8472L116.359 26.7091L116.489 26.4575C116.836 25.9125 117.096 25.2837 117.27 24.6548L117.357 24.4033L119.7 23.6486V22.2232L117.357 21.4686L117.27 21.2171C117.096 20.5882 116.836 19.9593 116.489 19.4143L116.359 19.1628L117.487 17.0247L116.446 16.0185L114.233 17.1085L113.972 16.9828C113.408 16.6474 112.757 16.3958 112.106 16.2281L111.846 16.1443L111.065 13.8804H109.59L108.809 16.1443L108.548 16.2281C107.897 16.3958 107.29 16.6474 106.682 16.9828L106.422 17.1085L104.209 16.0185L103.168 17.0247L104.296 19.1628L104.166 19.4143C103.818 19.9593 103.558 20.5882 103.385 21.2171L103.298 21.4686L100.955 22.2232V23.6486L103.298 24.4033L103.385 24.6548C103.558 25.2837 103.818 25.9125 104.166 26.4575L104.296 26.7091L103.168 28.8472L104.209 29.8534L106.422 28.7633L106.682 28.8891C107.246 29.2245 107.897 29.476 108.548 29.6437L108.809 29.7276L109.59 31.9915Z"
+                    fill="#3A8AB7"
+                  />
+                </g>
+                <g class="wheel-left" filter="url(#filter1_d_309_4790)">
+                  <path
+                    d="M128.34 37.94C125.824 37.94 123.754 36.0427 123.754 33.7361C123.754 31.4296 125.824 29.5322 128.34 29.5322C130.857 29.5322 132.927 31.4296 132.927 33.7361C132.927 36.0427 130.857 37.94 128.34 37.94ZM128.34 30.4251C126.352 30.4251 124.728 31.9132 124.728 33.7361C124.728 35.5591 126.352 37.0472 128.34 37.0472C130.329 37.0472 131.953 35.5591 131.953 33.7361C131.953 31.9132 130.329 30.4251 128.34 30.4251Z"
+                    fill="#7978AE"
+                  />
+                  <path
+                    d="M129.72 42.6274H126.961L126.189 40.4696C125.662 40.3208 125.175 40.1348 124.688 39.9116L122.455 40.9533L120.507 39.1676L121.644 37.1214C121.4 36.675 121.157 36.2285 121.035 35.7449L118.681 35.0381V32.5083L121.035 31.8014C121.197 31.3178 121.4 30.8714 121.644 30.4249L120.507 28.3788L122.455 26.5931L124.688 27.6347C125.175 27.4115 125.662 27.1883 126.189 27.0767L126.961 24.9189H129.72L130.492 27.0767C131.019 27.2255 131.506 27.4115 131.993 27.6347L134.225 26.5931L136.174 28.3788L135.037 30.4249C135.281 30.8714 135.524 31.3178 135.646 31.8014L138 32.5083V35.0381L135.646 35.7449C135.484 36.2285 135.281 36.675 135.037 37.1214L136.174 39.1676L134.225 40.9533L131.993 39.9116C131.506 40.1348 131.019 40.358 130.492 40.4696L129.72 42.6274ZM127.65 41.7717H129.03L129.761 39.7628L130.004 39.6884C130.613 39.5396 131.181 39.3164 131.75 39.0187L131.993 38.9071L134.063 39.8744L135.037 38.9815L133.982 37.0842L134.104 36.861C134.428 36.3774 134.672 35.8193 134.834 35.2613L134.915 35.0381L137.107 34.3684V33.1035L134.915 32.4339L134.834 32.2107C134.672 31.6526 134.428 31.0946 134.104 30.6109L133.982 30.3877L135.037 28.4904L134.063 27.5975L131.993 28.5648L131.75 28.4532C131.222 28.1556 130.613 27.9324 130.004 27.7835L129.761 27.7091L129.03 25.7002H127.65L126.92 27.7091L126.676 27.7835C126.068 27.9324 125.499 28.1556 124.931 28.4532L124.688 28.5648L122.618 27.5975L121.644 28.4904L122.699 30.3877L122.577 30.6109C122.253 31.0946 122.009 31.6526 121.847 32.2107L121.765 32.4339L119.574 33.1035V34.3684L121.765 35.0381L121.847 35.2613C122.009 35.8193 122.253 36.3774 122.577 36.861L122.699 37.0842L121.644 38.9815L122.618 39.8744L124.688 38.9071L124.931 39.0187C125.459 39.3164 126.068 39.5396 126.676 39.6884L126.92 39.7628L127.65 41.7717Z"
+                    fill="#7978AE"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_309_4790"
+                    x="85"
+                    y="0"
+                    width="50.6545"
+                    height="49.9556"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feflood flood-opacity="0" result="BackgroundImageFix" />
+                    <fecolormatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feoffset dy="2" />
+                    <fegaussianblur stdDeviation="7.5" />
+                    <fecomposite in2="hardAlpha" operator="out" />
+                    <fecolormatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feblend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_309_4790"
+                    />
+                    <feblend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_309_4790"
+                      result="shape"
+                    />
+                  </filter>
+                  <filter
+                    id="filter1_d_309_4790"
+                    x="103.681"
+                    y="11.9189"
+                    width="49.3191"
+                    height="47.7085"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feflood flood-opacity="0" result="BackgroundImageFix" />
+                    <fecolormatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feoffset dy="2" />
+                    <fegaussianblur stdDeviation="7.5" />
+                    <fecomposite in2="hardAlpha" operator="out" />
+                    <fecolormatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feblend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_309_4790"
+                    />
+                    <feblend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_309_4790"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </h1>
+          </div>
+        </div>
+
+        <!--Work Section-->
+        <div id="my-work">
+          <div class="container">
+            <h1 id="title" class="center">My Work</h1>
+            <!--Project One Section-->
+          </div>
+
+          <!--both columns for project-->
+         
+        <div class="row">
+            <div class="column col-md-6 col-lg-7">
+              <picture>
+                <img
+                  src="img/insideout/insideoutlogo.png"
+                  id="io-banner"
+                  class="center-image"
+                  width="400"
+                  height="500"
+                  alt="Inside Out"
+                  style="width: auto"
+                />
+              </picture>
+            </div>
+            <!--end first column-->
+            <div class="column col-md-6 col-lg-5">
+              <!--second column (for text)-->
+              <h3>Inside Out</h3>
+              <!--project 1 title-->
+              <p>
+                Inside Out is a health-app for tracking exercise and nutrition
+              </p>
+              <a href="insideout.html" class="button">View Project</a>
+              <!--button link-->
+            </div>
+          </div>
+        </div>
+        <!--end second column-->
+        <!--Project Two Section-->
+        <div>
+          <!-- both columns for project-->
+          <div class="row">
+            <div  id="sd-image" class="column col-md-6 col-lg-7">
+              <picture>
+                <img
+                  src="img/somedumpling/somdumpling.png"
+                  id="sd-banner"
+                  class="center-image"
+                  width="400"
+                  height="500"
+                  alt="Some Dumpling"
+                  style="width: auto"
+                />
+              </picture>
+            </div>
+
+            <!-- end both column -->
+            <!--begin Some Dumpling second column-->
+            <div id="sd-worktext" class="column col-md-6 col-lg-5">
+              <h3>Some Dumpling</h3>
+              <!-- project 2 title-->
+              <p>
+                Some Dumpling a small business delivering fresh-frozen dumplings
+              </p>
+              <a href="#" class="button">View Project</a>
+            </div>
+            <!-- end second column -->
+          </div>
+          <!-- end entire row -->
+        </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer id="my-footer" class="container">
+      <h2 class="center" id="footer-title">Get in Touch</h2>
+      <p class="center">
+        For any questions or inquiries you can send me an email or connect with
+        me through Linkedin!
+      </p>
+      <div class="center">
+        <a href="mailto:teresala.45@gmail.com" class="button contact"
+          >Email Me</a
+        >
+      </div>
+      <!--Social Media Links-->
+      <div class="center">
+        <a href="https://www.linkedin.com/in/teresa-la/" target="_blank">
+          <picture>
+            <img
+              src="img/linkedinicon.png"
+              class="social-link"
+              width="25"
+              height="25"
+              alt="linkedin"
+              style="width: auto"
+            />
+          </picture>
+        </a>
+        <a href="https://www.instagram.com/teresa_la_/?hl=en" target="_blank">
+          <picture>
+            <img
+              src="img/Instagramicon.png"
+              class="social-link"
+              width="25"
+              height="25"
+              alt="instagram"
+              style="width: auto"
+            />
+          </picture>
+        </a>
+        <a href="https://dribbble.com/teresala14" target="_blank">
+          <picture>
+            <img
+              src="img/dribbleicon.png"
+              class="social-link"
+              width="25"
+              height="25"
+              alt="dribble"
+              style="width: auto"
+            />
+          </picture>
+        </a>
+      </div>
+      <p class="right">Copyright Teresa-La 2022</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
-
