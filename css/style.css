@@ -26,10 +26,6 @@ h1 {
     display: block;
     font-size: 1.7em;
     color:#2F2183;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    border:#2F2183;
-    background-color: #ffffff;
     font-weight: 600;
     letter-spacing: 10px;
   
@@ -175,7 +171,7 @@ main {
 #hero {
     display:block;
     background-color: whitesmoke;
-    max-width:80%;
+    max-width:100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -377,9 +373,6 @@ Medium devices (640px and larger)
     
     }
     h2 {
-        margin: 5% auto;
-        margin-top: 5%;
-        margin-bottom:5%;
         font-size: 1.6em;
         color: #4A557B;
         font-weight: 600;
@@ -389,11 +382,9 @@ Medium devices (640px and larger)
         }
 
     h1, h2, h3, h4 {
-        margin: 5% auto;
+        margin: 2% auto;
     }
-    #hero {
-        text-align:center;
-    }
+
     #hero-image{
         max-width:80%;
     
@@ -496,15 +487,11 @@ Medium devices (640px and larger)
     text-align: center;
     padding: 20px;
     margin-top:2%;
+    text-decoration: underline;
 }
 .final-screens{
     margin-top: 10%;
     margin-bottom:10%;
-}
-#io-banner, #sd-banner{
-    display: block;
-    max-width: 300px;
-   margin-right: 5%;
 }
 
 #hero-svg{
@@ -537,10 +524,6 @@ Large devices (1024px or larger)
         display: inline-block;
         font-size: 14px;}
     
-    img{
-        max-width: 70%;
-    }
-
     
     .col-lg-7 {
         width: 60%;
@@ -548,7 +531,7 @@ Large devices (1024px or larger)
     
     .col-lg-5 {
         width: 40%;
-        padding-left: 2%;
+        padding-left: 10%;
         padding-top:3%;
       padding-right: 5%;
       margin-top: 2%;
@@ -583,10 +566,16 @@ margin-left: auto;
 margin-right:auto;
 align-content: center;
     }
+    .index-image{
+        width:60%;
+        margin-left:30%;
+        margin-right:5%;
+        margin-top: 2%;
+    }
 
     #toollist {
         width: 600px;
-        height: 320px;
+        height: 270px;
         margin: 2%;
         padding-left:10%;
         padding-right:10%; 
@@ -600,7 +589,7 @@ align-content: center;
     }
     #skilllist {
     width: 600px;
-    height: 375px;
+    height: 300px;
         margin: 2%;
         padding-left:10%; 
         padding-right:10%; 
@@ -608,7 +597,7 @@ align-content: center;
         background-color:#ffffff;
         box-shadow: 0px 4px 20px #5E7AAE;
         margin-top: 2%;
-        margin-bottom: 12%;
+        margin-bottom: 10%;
         padding-top: 5%;
             padding-bottom: 10%;
         border-radius: 8px;}
@@ -644,8 +633,9 @@ align-content: center;
             margin-bottom:2%;
         }
     #hero-image{
-        max-width: 50%;
-        padding-top: 40px;
+        max-width: 40%;
+        margin-right:0;
+        padding-top: 20px;
     }
 
 .cust-grid{
@@ -670,30 +660,26 @@ margin-left: auto;
 margin-right: auto;
 }
 #issue1{
-    margin-top:0;
-    max-width: 800px;
-    padding-top:50px;
+    margin-top:8%;
+    width:70%;
 }
 #issue2{
-    max-width: 800px;
+    width: 70%;
     padding-top:10%;
     padding-bottom:5%;
 
 }
 #issue3{
-    max-width: 800px;
+    width: 70%;
     padding-top:10%;
     padding-bottom:5%;
     }
     #preference{
-        max-width: 800px;
+        width: 70%;
         padding-bottom:5%;
     }
     #resume-button{
         margin-top:10%;
-    }
-    #sd-banner, #io-banner{
-        max-width: 500px;
     }
 #io-title{
     max-height:400px;
@@ -701,15 +687,14 @@ margin-right: auto;
 #io-caption{
     max-width: 600px;
 }
+
 #problem, #solution{
     margin-top:0;
     margin-left: auto;
     margin-right: auto;
     width: 500px;
 }
-.col-md-3{
-    width:450px;
-}
+
 .study-text{
     width: 1000px;
     margin-left:auto;
@@ -737,7 +722,25 @@ body, html {
     padding-right:none;
     margin-right:none;
 }
-
+h1{
+    margin-bottom:0;
+}
+#title{
+    margin-bottom: 0;
+}
+#hero h1{
+    padding-right: 30%;
+    margin-top:5%;
+}
+#surveys{
+    padding-left:13%;
+}
+#learnings{
+    padding-left:13%;
+}
+#work-text, #work-text-2{
+    padding-left:0;
+}
 }
 
 
