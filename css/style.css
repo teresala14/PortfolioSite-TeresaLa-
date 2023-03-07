@@ -8,10 +8,9 @@ Header 3,4 Color: Blue #5E7AAE
 * {
     box-sizing: border-box;
   }
-  
 body {
     color: black;
-    background-color: whitesmoke;
+    background-color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px; /*sets the font size to 14*/
     font-weight: 400; /*sets the font weight to 400*/
@@ -22,7 +21,7 @@ h1, h2, h3, h4 {
     line-height: 1.4em;
 }
 h1 {
-    margin: 5% auto;
+    margin: auto;
     display: block;
     font-size: 1.7em;
     color:#2F2183;
@@ -37,6 +36,7 @@ h1 > span {
 }
 #hero-text{
 font-size: 1.2em;
+margin-bottom:0;
 }
 h2 {
     margin: 10% auto;
@@ -85,7 +85,7 @@ a{
     text-decoration: none;
 }
 .button:visited {
-    color: white
+    color: #ffffff;
 }
 .icon:active{
     color:white;
@@ -110,9 +110,9 @@ a{
     background-color: #140C48;
 }
 .button.contact {
-    background-color:transparent;
-    color: white;
-    border: 2px solid white;
+    background-color:white;
+    color: #2F2183;
+    border: 2px solid #2F2183;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 5px;
@@ -121,8 +121,8 @@ a{
 }
 
 .button.contact:hover {
-    background-color:white;
-    color: #2F2183;
+    background-color:#130b3f;
+    color: #ffffff;
 }
 .button.contact:active {
     background-color:rgb(211, 193, 238);
@@ -131,21 +131,19 @@ a{
 }
 .container {
     display: inline-block;
-    padding: 15px 15px 15px 15px;
     width: 100%;
     margin-left: auto;
     margin-right:auto;
   }
-#my-header {
-    display: block;
-    background-color: #4A557B;
-    width:auto;
-    color: white;
-    padding:10px 0 4px;
-    border: 5px solid #4A557B;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 0px 10px 10px;
-    position: relative;
+#my-header {   
+box-sizing: border-box;
+position: relative;
+margin-top:0;
+background: #4a3a95;
+filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+border-radius: 0px 0px 8px 8px;
+box-shadow: 0px 4px 20px #bca8d1;
+padding-top:10px;
 }
 .logo {
     max-width: 150px;
@@ -170,7 +168,7 @@ main {
 
 #hero {
     display:block;
-    background-color: whitesmoke;
+    background-color: white;
     max-width:100%;
     margin-left: auto;
     margin-right: auto;
@@ -182,6 +180,7 @@ main {
 
 }
 #hero-image {
+    padding-top:15px;
    display:block;
     margin-left:auto;
     margin-right:auto;
@@ -195,11 +194,17 @@ main {
     max-width: 100%;
     padding: 0;
  }
-
+#span{
+    font-size:smaller;
+width:80%;
+font-family:"Nothing You Could Do", cursive;
+font-weight: 400;
+box-shadow: 0px 4px 20px #5E7AAE (77, 44, 221, 0.25);
+}
 /*////////NAVIGATION CSS///////*/ 
 
 nav > ul> li> a {
-    color: white;
+    color: #ffffff;
 padding: 0 15px;
 font-weight:600
 }
@@ -207,7 +212,7 @@ nav > ul> li> a:hover{
     text-decoration-line: underline;
 }
 nav > ul> li> a:visited{
-    color: white;
+    color:#ffffff;
 }
 .center-image {
     display: block;
@@ -263,14 +268,20 @@ margin-right:20px;
 
 
 #my-footer {
-    display: block;
-    background-color: #4A557B;
-    color: white;  
-    border: 15px solid #4A557B;
+padding-right:10px;
+padding-left:10px;
+    box-sizing: border-box;
+position: relative;
+margin-top:5%;
+color:#ffffff;
+background: #4a3a95;
+filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+border-radius: 8px 8px 0px 0px;
+box-shadow: 0px 4px 20px #bca8d1;
 }
 
 #my-work {
-    background-color: whitesmoke;
+    background-color: white;
     display: inline-block;
 }
 
@@ -278,14 +289,14 @@ margin-right:20px;
     color:white;
 }
 #footer-title {
-    color: white;
+    color: #ffffff;
     background: none;
     box-shadow: none;
     width: 100%;
 }
 .row {
     margin: 25px 0;
-    background-color: whitesmoke;
+    background-color: white;
     
 }
 .row::after {
@@ -321,10 +332,23 @@ margin-right:20px;
     text-align: right;
 }
     #my-story{
-        background-color: whitesmoke;
+        background-color: white;
         box-shadow: none;
 }
-
+#work-text{
+    margin-left:5%;
+    margin-right: 5%;
+}
+#work-text-2{
+    margin-left:5%;
+    margin-right: 5%;
+}
+main{
+margin-left:2%;
+margin-right:2%;
+margin-top:5%;
+margin-bottom:5%;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -334,6 +358,7 @@ Medium devices (640px and larger)
         padding: 10px 0 0 13px;
     }
     #hero-text{
+
         font-size: 1.8em;
         }
     nav {
@@ -386,7 +411,9 @@ Medium devices (640px and larger)
     }
 
     #hero-image{
-        max-width:80%;
+        padding-top: 10%;
+        margin-right:0;
+        max-width:60%;
     
     }
     h1>span {
@@ -430,12 +457,16 @@ Medium devices (640px and larger)
         margin-right:20px;
     }
     #io-worktext, #sd-worktext{
-      
         margin-left:auto;
         margin-right:auto;
-    
+    }
+    #span{
+        width:80%;
+        font-size:large;
+        font-weight: 600;
     }
     #skills-tools{
+        margin-top:5%;
         margin-left:20%;
     }
     #skilllist{
@@ -508,6 +539,12 @@ Medium devices (640px and larger)
  #issue1{
     margin-top: 20%;
  }
+ #hero h1{
+    padding-top:15%;
+ }
+ #work-text, #work-text-2{
+    margin:0;
+ }
 }
     
 
@@ -539,7 +576,6 @@ Large devices (1024px or larger)
     }
     .col-lg-8 {
         width: 60%;
-        margin-right: 10%;
     }
     .col-lg-4 {
         width: 28%;
@@ -574,11 +610,11 @@ align-content: center;
     }
 
     #toollist {
-        width: 600px;
+        width: 200px;
         height: 270px;
         margin: 2%;
-        padding-left:10%;
-        padding-right:10%; 
+        padding-left:5%;
+        padding-right:5%; 
         color: rgb(75, 75, 125);
             background-color:#ffffff;
             box-shadow: 0px 4px 20px #5E7AAE;
@@ -588,17 +624,16 @@ align-content: center;
             border-radius: 8px;
     }
     #skilllist {
-    width: 600px;
+    width: 200px;
     height: 300px;
         margin: 2%;
-        padding-left:10%; 
-        padding-right:10%; 
+        padding-left:5%; 
+        padding-right:5%; 
         color: rgb(75, 75, 125);
         background-color:#ffffff;
         box-shadow: 0px 4px 20px #5E7AAE;
         margin-top: 2%;
         margin-bottom: 10%;
-        padding-top: 5%;
             padding-bottom: 10%;
         border-radius: 8px;}
         
@@ -606,11 +641,18 @@ align-content: center;
             margin-left:0;}
 
 .container {
+    padding-top:0;
+    padding-bottom:0;
+    padding-left:0;
+    padding-right:0;
     margin-left: auto;
     margin-right:auto;
-        max-width: 1200;
+        max-width: 1500px;
     }
+#hero h1{
+    padding-top:5%;
 
+}
     #hero span {
         font-size:medium;
         display: block;
@@ -683,6 +725,7 @@ margin-right: auto;
     }
 #io-title{
     max-height:400px;
+    padding-top:5%;
 }
 #io-caption{
     max-width: 600px;
@@ -733,14 +776,26 @@ h1{
     margin-top:5%;
 }
 #surveys{
-    padding-left:13%;
+    padding-left:15%;
 }
 #learnings{
-    padding-left:13%;
+    padding-left:15%;
+}
+#thank-you{
+    padding-left:15%;
 }
 #work-text, #work-text-2{
     padding-left:0;
 }
+.story-text{
+    width: 80%;
+    padding-left: 20%;
+
+}
+#resume-button{
+    margin-left:20%;
+}
+
 }
 
 
